@@ -86,3 +86,15 @@ main {
         text-align: center;
     }
 }
+
+/* articles/index.php */
+#sort-container {
+    display: flex;
+
+}
+
+.sort {
+    border: 1px solid black;
+    padding: 2px;
+    margin: 0 10px;
+}

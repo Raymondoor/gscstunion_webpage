@@ -6,5 +6,5 @@ function echoIndented($level, $text) {
 }
 
 foreach ($articles as $key => $article) {
-    echo "<li>" . $article["title"] . " / ". $article["date"] . " <br> " . $article["main"] . "</li>\n<hr>\n";
+    echo "<li><a href=\"1.php\">" . $article["title"] . "</a> / ". $article["date"] . " <br> " . $article["main"] . "</li>\n<hr>\n";
 }

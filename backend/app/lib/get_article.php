@@ -10,5 +10,5 @@ try {
 }
 
 
-$stmt = $pdo->query("SELECT * FROM article");
+$stmt = $pdo->query("SELECT * FROM article ORDER BY date DESC");
 $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -11,6 +11,8 @@ include "{$dir_back}backend/app/views/header.php";
 
     <main>
         <h2>admin page</h2>
+
+        
     </main>
 
 <?php

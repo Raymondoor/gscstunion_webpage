@@ -1,2 +1,0 @@
-clamp() to #navbar rel_link
-
