@@ -1,0 +1,31 @@
+www.cc.aoyama.ac.jp
+	/gscstunion
+		.htaccess
+		index.php
+		/admin
+			.htaccess
+				login.php
+				index.php
+		/articles
+			index.php
+			
+		/assets
+			style.css
+			index.js
+				/images
+					logo.png
+		/backend
+			.htaccess
+			/app
+				/config
+					init.php
+					homedir.php
+				/lib
+					init.php
+					add_article.php
+					session_time.php
+				/views
+					header.php
+					footer.php
+			/data
+				database.db
