@@ -11,33 +11,28 @@ include "{$dir_back}backend/app/views/header.php";
 
     <main>
         <h2>Articles</h2>
-        <form id="sortForm">
-            <div id="sort-container">
-                
-                    <div class="sort" id="sort-type">
-                        <label for="Date:">
-                        <input type="radio" id="Date" value="date" name="sort-type">Date:
-                        </label>
-                        <label for="Alphabet:">
-                        <input type="radio" id="Alphabet" value="title" name="sort-type">Alphabet:
-                        </label>
-                    </div>
-                    <div class="sort" id="sort-order">
-                        <label for="Ascend:">
-                        <input type="radio" id="asc" value="ASC" name="sort-order">Ascend:
-                        </label>
-                        <label for="Descend:">
-                        <input type="radio" id="desc" value="DESC" name="sort-order">Descend:
-                        </label>
-                    </div>
-                    <div id="submit"><input type="submit" value="submit"></div>
-                
+            <div id="sortContainer">
+                <div class="sort" id="type">
+                    <label for="sort-type">Sort by:</label>
+                    <select name="sort-type" id="sort-type">
+                        <option value="">--並べ替え--</option>
+                        <option value="date">日付</option>
+                        <option value="title">記事タイトル</option>
+                    </select>
+                </div>
+                <div class="sort" id="order">
+                    <label for="sort-order">Sort order:</label>
+                    <select name="sort-order" id="sort-order">
+                        <option value="">--並べ替え--</option>
+                        <option value="ASC">昇順</option>
+                        <option value="DESC">降順</option>
+                    </select>
+                </div>
             </div>
-        </form>
         <div class="article-table-container">
-            <ul id="article-list">
+            
                 <?php include "../backend/app/lib/list_article.php"; ?>
-            </ul>
+            
         </div>
     </main>
 

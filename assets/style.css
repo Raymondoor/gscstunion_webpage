@@ -88,13 +88,16 @@ main {
 }
 
 /* articles/index.php */
-#sort-container {
+#sortContainer {
     display: flex;
 
 }
 
 .sort {
-    border: 1px solid black;
     padding: 2px;
     margin: 0 10px;
+}
+select {
+    border: none;
+    outline: none;
 }
