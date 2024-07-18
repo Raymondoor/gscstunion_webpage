@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
@@ -54,6 +57,7 @@ header {
         }
         p {
             margin: 0;
+            
         }
 
 
@@ -76,7 +80,61 @@ header {
 }
 footer {
     background-color: rgb(220, 220, 220);
-    height: 100px;
+
+    #f-links {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid black;
+        margin: 0 50px;
+
+        #f-main-link {
+            margin: 16px 0;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    #fnavbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+
+        #f-sns-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .sns_image {
+                height: 20px;
+                padding: 10px 10px;
+                transition: all 200ms;
+            }
+            .sns_image:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    #back2top {
+        display: flex;
+        justify-content: center;
+
+        #b2t {
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            margin: 6px;
+
+            #b2timg {
+                height: 15px;
+            }
+        }
+    }
+
+
 }
 
 main {

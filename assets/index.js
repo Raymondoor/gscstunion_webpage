@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    let list = document.getElementById('sortForm');
-    let items = Array.from(list.querySelectorAll('li')); // Convert NodeList to Array
-    items.sort(function(a, b) {
-        return new Date(b.getAttribute('data-date')) - new Date(a.getAttribute('data-date'));
+    // script.js
+
+// When the user clicks on the button, scroll to the top of the document
+    document.getElementById('b2t').addEventListener('click', function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     });
-    items.forEach(function(item) {
-        list.appendChild(item); // Re-append items in sorted order
-        list.appendChild(document.createElement('hr')); // Append a horizontal line after each item
-    });
+  
 });
