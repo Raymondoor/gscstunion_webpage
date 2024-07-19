@@ -29,11 +29,9 @@ include "{$dir_back}backend/app/views/header.php";
                     </select>
                 </div>
             </div>
-        <div class="article-table-container">
-            
+            <div class="article-table-container">            
                 <?php include "../backend/app/lib/list_article.php"; ?>
-            
-        </div>
+            </div>
     </main>
 
 <?php

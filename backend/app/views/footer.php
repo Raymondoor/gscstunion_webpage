@@ -17,7 +17,7 @@
             <div id="license">
                 GSC 学生連合<br>
                 gscstunion@aoyama.jp<br>
-                &#169 All rights reserved
+                <?php echo date("Y"); ?> &#169 All rights reserved
             </div>
             <div id="f-sns-link">
                 <a href="https://instagram.com/gscstunion" target="_blank" title="Instagram"><img src="<?php echo $dir_back; ?>assets/images/icon/Instagram.png" alt="Instagram" class="sns_image"></a>
