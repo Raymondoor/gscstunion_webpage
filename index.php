@@ -10,9 +10,7 @@ include "{$dir_back}backend/app/views/header.php";
 ?>
 
     <main>
-        <div class="title">
             <h2>About Us</h2>
-        </div>
     </main>
 
 <?php

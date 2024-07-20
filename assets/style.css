@@ -138,10 +138,29 @@ footer {
 }
 
 main {
-    margin: 0px 20px;
-
+    
     h2 {
         text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: clamp(40px, 10vw, 100px);
+        margin: 0%;
+    }
+    #art-h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/h2background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        
+        margin: none;
+        padding: 2%;
+        
+        h2 {
+            color: white;
+        }
+            
     }
 }
 
