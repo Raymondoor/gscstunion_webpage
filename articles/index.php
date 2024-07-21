@@ -31,7 +31,7 @@ include "{$dir_back}backend/app/views/header.php";
                 </select>
             </div>
         </div>
-        <div class="article-table-container">            
+        <div id="article-table">            
             <?php include "../backend/app/lib/list_article.php"; ?>
         </div>
     </main>

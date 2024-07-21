@@ -95,6 +95,16 @@ footer {
             }
         }
     }
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+    a:visited {
+        color: inherit;
+    }
+    a:hover {
+        color: rgb(0, 180, 180);
+    }
 
     #fnavbar {
         display: flex;
