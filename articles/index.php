@@ -13,26 +13,26 @@ include "{$dir_back}backend/app/views/header.php";
         <div id="art-h2">
             <h2>Articles</h2>
         </div>
-        <div id="sortContainer">
-            <div class="sort" id="type">
-                <label for="sort-type">Sort by:</label>
-                <select name="sort-type" id="sortType">
-                    <option value="">--並べ替え--</option>
-                    <option value="date">日付</option>
-                    <option value="title">記事タイトル</option>
-                </select>
+        <div id="article-main">
+            <div id="sortContainer">
+                <div class="sort" id="type">
+                    <label for="sort-type">Sort by:</label>
+                    <select name="sort-type" id="sortType">
+                        <option value="date" selected>日付</option>
+                        <option value="title">記事タイトル</option>
+                    </select>
+                </div>
+                <div class="sort" id="order">
+                    <label for="sort-order">Sort order:</label>
+                    <select name="sort-order" id="sortOrder">
+                        <option value="ASC">昇順</option>
+                        <option value="DESC" selected>降順</option>
+                    </select>
+                </div>
             </div>
-            <div class="sort" id="order">
-                <label for="sort-order">Sort order:</label>
-                <select name="sort-order" id="sortOrder">
-                    <option value="">--並べ替え--</option>
-                    <option value="ASC">昇順</option>
-                    <option value="DESC">降順</option>
-                </select>
+            <div id="article-table">            
+                <?php include "../backend/app/lib/list_article.php"; ?>
             </div>
-        </div>
-        <div id="article-table">            
-            <?php include "../backend/app/lib/list_article.php"; ?>
         </div>
     </main>
 

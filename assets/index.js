@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Sort articles
-    const sortType = document.getElementById("sortType");
-    const sortOrder = document.getElementById("sortOrder");
 
     // Create an array to hold multiple data objects
     let dataArray = [];
@@ -26,22 +24,33 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         dataArray.push(data);
     }
+    
     var articleContainer = document.getElementById('article-table');
     var selectElement = document.getElementById('sortType');
-    selectElement.addEventListener('change', function() {
-        var value = this.value;
-        if (value) {
+    var sortDirElement = document.getElementById('sortOrder');
+    function sortAndUpdateDisplay() {
+        var sortProperty = selectElement.value;
+        var sortDirection = sortDirElement.value;
+        if (sortProperty) {
             let sortedData = dataArray.sort((x, y) => {
-                // Assuming they are strings, compare them in a case-insensitive manner
-                return y[value].localeCompare(x[value], undefined, {sensitivity: 'base'});
-                });
+                const modifier = sortDirection === 'ASC' ? -1 : 1;
+                if (sortProperty === "title"){
+                    return  modifier * y[sortProperty].localeCompare(x[sortProperty], 'ja-JP', {sensitivity: 'variant'});
+                }
+                else {
+                    return modifier * y[sortProperty].localeCompare(x[sortProperty], undefined, {sensitivity: 'base'});
+                }
+            });
             updateDisplay(sortedData);
         }
         else {
             updateDisplay(dataArray);
         }
         
-    });
+    };
+    selectElement.addEventListener('change', sortAndUpdateDisplay);
+    sortDirElement.addEventListener('change', sortAndUpdateDisplay);
+
     function updateDisplay(data) {
         articleContainer.innerHTML = '';  // Clear existing content
         data.forEach(article => {
