@@ -1,0 +1,7 @@
+edit main page content
+    write aboutus
+    integrate sns widgets
+
+footer
+    "contact from ig or x" message at end
+    manage links
