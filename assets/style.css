@@ -11,7 +11,7 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(240, 240, 240);
     border-bottom: 1px solid rgb(128, 128, 128);
-    padding: 0px;
+    padding: 0;
     
     h1 {
         margin: 0;
@@ -21,7 +21,7 @@ header {
         background-color: #479e88;
     }
     hr {
-        margin: 0%;
+        margin: 0;
         height: 2px;
         background-color: rgb(128, 128, 128);
         border: none;
@@ -152,8 +152,23 @@ main {
     h2 {
         text-align: center;
         color: rgb(0, 0, 0);
-        font-size: clamp(40px, 10vw, 100px);
-        margin: 0%;
+        font-size: clamp(40px, 4vw, 100px);
+        margin: 0;
+    }
+    #home-banner {
+        text-align: center;
+        color: white;
+        background-image: url(images/chapel.jpeg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 20px 0;
+        h2 {
+            color: white;
+        }
+        h3 {
+            letter-spacing: 4px;
+        }
     }
     #art-h2 {
         display: flex;
@@ -163,8 +178,7 @@ main {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
-        
-        margin: none;
+        margin: 0;
         padding: 2%;
         
         h2 {

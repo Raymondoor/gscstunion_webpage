@@ -10,7 +10,11 @@ include "{$dir_back}backend/app/views/header.php";
 ?>
 
     <main>
-            <h2>About Us</h2>
+        <div id="home-banner">
+            <h2>GSC Stunion</h2>
+            <h3>地球社会共生学部学生連合</h3>
+            <h4>青山学院大学</h4>
+        </div>
     </main>
 
 <?php

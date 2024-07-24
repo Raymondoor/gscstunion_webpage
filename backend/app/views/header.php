@@ -9,7 +9,7 @@
 
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="<?php echo $dir_back; ?>assets/style.css">
-    <link rel="icon" href="<?php echo $dir_back; ?>assets/images/icon/GSC_logo.png" type="image/jpg">
+    <link rel="icon" href="<?php echo $dir_back; ?>assets/images/icon/favicon.jpg" type="image/jpg">
 </head>
 <body>
     <header>
