@@ -80,6 +80,7 @@ header {
 }
 footer {
     background-color: rgb(220, 220, 220);
+    font-size: small;
 
     #f-links {
         display: flex;
