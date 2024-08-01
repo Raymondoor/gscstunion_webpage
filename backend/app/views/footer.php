@@ -29,5 +29,25 @@
         </div>
     </footer>
     <script src="<?php echo $dir_back; ?>assets/index.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "地球社会共生学部　学生連合",
+        "alternateName": "gscstunion",
+        "url": "https://www.cc.aoyama.ac.jp/~gscstunion/",
+        "logo": "https://www.cc.aoyama.ac.jp/~gscstunion/assets/images/icon/GSC_logo.png",
+        "description": "地球社会共生学部公認の団体「学生連合」は、学部の魅力を学生目線から高める団体です。盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "5-10-1 Fuchinobe",
+            "addressLocality": "Sagamihara",
+            "addressRegion": "Kanagawa",
+            "postalCode": "252-5258",
+            "addressCountry": "JP"
+        },
+    }
+    </script>
+
 </body>
 </html>
