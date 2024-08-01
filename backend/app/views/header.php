@@ -19,6 +19,8 @@
     <meta name="twitter:description" content="地球社会共生学部公認の団体「学生連合」は、学部の魅力を学生目線から高める団体です。盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。">
     <meta name="twitter:image" content="<?php echo $dir_back; ?>assets/images/icon/GSC_logo.png">
 
+    <meta name="google-site-verification" content="HEqZhtsd512Z-yqCVwc5-d8iAnR-wA0n_cJv3Bjlkak" />
+
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="<?php echo $dir_back; ?>assets/style.css">
     <link rel="icon" href="<?php echo $dir_back; ?>assets/images/icon/favicon.jpg" type="image/jpg">
