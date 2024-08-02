@@ -33,7 +33,7 @@ header {
     }
 
     #navbar {
-        padding: 0 20px;
+        padding: 5px 20px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -92,6 +92,7 @@ footer {
         justify-content: space-around;
         border-bottom: 1px solid black;
         margin: 0 50px;
+        flex-wrap: wrap;
 
         #f-main-link {
             margin: 16px 0;
@@ -188,8 +189,8 @@ main {
 
         #slogan {
             
-            color: hsl(0, 0%, 57%);
-            text-shadow: 2px 2px 1px hsla(0, 0%, 0%, 0.8);
+            color: hsl(0, 0%, 60%);
+            text-shadow: 2px 2px 1.5px hsla(0, 0%, 0%, 0.66);
             width: min(500px, 35%);
             padding-left: 1.5vw;
             display: flex;
@@ -243,8 +244,11 @@ main {
         background-size: 100%;
         margin: 0;
         padding: 2%;
-        
+
         h2 {
+            text-align: center;
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            margin: 0;
             color: white;
         }
             
@@ -264,6 +268,6 @@ main {
     }
     #article-main {
         max-width: 90%;
-        margin: 0 auto;
+        margin: 5px auto;
     }
 }
