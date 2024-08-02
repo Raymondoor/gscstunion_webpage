@@ -27,10 +27,17 @@ include "{$dir_back}backend/app/views/header.php";
         <hr>
         <div id="socialpage">
             <div id="socialpagenav">
-                <a href="<?php echo $Instagram; ?>" target="_blank" title="Instagram">
-                <img src="<?php echo $dir_back; ?>assets/images/icon/WInstagram.png" alt="Instagram" class="socialpagelogo">Instagram</a>
-                <a href="<?php echo $X; ?>" target="_blank" title="Instagram">
-                <img src="<?php echo $dir_back; ?>assets/images/icon/WX.png" alt="Instagram" class="socialpagelogo">X</a>
+                <div class="spn-container">
+                    <a href="<?php echo $Instagram; ?>" target="_blank" title="Instagram">
+                    <img src="<?php echo $dir_back; ?>assets/images/icon/WInstagram.png" alt="Instagram" class="socialpagelogo">Instagram</a>
+                </div>
+                <div class="spn-container">
+                    <a href="<?php echo $X; ?>" target="_blank" title="Instagram">
+                    <img src="<?php echo $dir_back; ?>assets/images/icon/WX.png" alt="Instagram" class="socialpagelogo">X(Twitter)</a>
+                </div>
+            </div>
+            <div id="socialpost">
+            // Picture goes here
             </div>
         </div>
     </main>
