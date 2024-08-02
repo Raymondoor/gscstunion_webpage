@@ -4,3 +4,4 @@ $baseDir = __DIR__ . '/';
 
 //require_once $baseDir . 'get_article.php';
 require_once $baseDir . 'session_time.php';
+require_once $baseDir . 'snslinks.php';

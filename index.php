@@ -26,7 +26,12 @@ include "{$dir_back}backend/app/views/header.php";
         </div>
         <hr>
         <div id="socialpage">
-            <h2>SNS</h2>
+            <div id="socialpagenav">
+                <a href="<?php echo $Instagram; ?>" target="_blank" title="Instagram">
+                <img src="<?php echo $dir_back; ?>assets/images/icon/WInstagram.png" alt="Instagram" class="socialpagelogo">Instagram</a>
+                <a href="<?php echo $X; ?>" target="_blank" title="Instagram">
+                <img src="<?php echo $dir_back; ?>assets/images/icon/WX.png" alt="Instagram" class="socialpagelogo">X</a>
+            </div>
         </div>
     </main>
 

@@ -4,7 +4,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 100%);
 }
 @font-face {
     font-family: "M-plus rounded";
@@ -22,13 +22,13 @@ body {
 
 header {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(240, 240, 240);
+    background-color: hsl(0, 0%, 94%);
     padding: 0;
 
     hr {
         margin: 0;
-        height: 1.5px;
-        background-color: rgb(0, 180, 180);
+        height: 2.5px;
+        background-color: #479e88;
         border: none;
     }
 
@@ -48,7 +48,7 @@ header {
             flex-wrap: wrap;
         
             a {
-                color: rgb(64, 64, 64);
+                color: hsl(0, 0%, 25%);
                 text-decoration: none;
                 padding: 15px 5px;
                 margin: 0 25px;
@@ -57,7 +57,7 @@ header {
                 transition: all 240ms;
             }
             a:hover {
-                color: rgb(0, 180, 180);
+                color: hsl(180, 100%, 35%);
             }
         }
         p {
@@ -188,7 +188,8 @@ main {
 
         #slogan {
             
-            color: rgb(146, 146, 146);
+            color: hsl(0, 0%, 57%);
+            text-shadow: 2px 2px 1px hsla(0, 0%, 0%, 0.8);
             width: min(500px, 35%);
             padding-left: 1.5vw;
             display: flex;
@@ -196,7 +197,7 @@ main {
             justify-content: center;
             white-space: nowrap;
             font-size: clamp(0.9rem, 2.75vw, 2.2rem);
-            font-family: "Noto Serif";
+            font-family: "Noto Serif", "M-plus rounded bold", "Arial";
         }
         #au-description {
             
@@ -206,13 +207,13 @@ main {
             line-height: 1.8;
             width: min(700px, 45%);
             font-size: clamp(0.66rem, 1.33vw, 1rem);
-            font-family: "M-plus rounded";
+            font-family: "M-plus rounded", "Arial";
         }
         
     }
     hr {
         margin: 20px 2em;
-        border: 1px solid rgb(127, 127, 127);
+        border: 1px solid hsl(0, 0%, 50%);
         
     }
     #socialpage {
@@ -220,8 +221,14 @@ main {
         background-color: #479e88;
         color: white;
         text-align: center;
-        h2 {
-            margin: 0;
+
+        #socialpagenav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .socialpagelogo {
+            height: 20px;
         }
     }
 
