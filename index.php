@@ -24,6 +24,10 @@ include "{$dir_back}backend/app/views/header.php";
                     盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。</p>
             </div>
         </div>
+        <hr>
+        <div id="socialpage">
+            <h2>SNS</h2>
+        </div>
     </main>
 
 <?php

@@ -28,9 +28,8 @@
 <body>
     <header>
         <div id="h_title">
-            <h1>GSC Stunion</h1>
+            <!-- <h1>GSC Stunion</h1> -->
         </div>
-        <hr>
         <nav id="navbar">
             <div id="rel_link">
                 <p><a href="<?php echo $dir_back; ?>">HOME</a></p>
@@ -41,4 +40,5 @@
                 <a href="https://x.com/GSCstunion" target="_blank" title="X(Twitter)"><img src="<?php echo $dir_back; ?>assets/images/icon/X.png" alt="X(Twitter)" class="sns_image"></a>
             </div>
         </nav>
+        <hr>
     </header>
