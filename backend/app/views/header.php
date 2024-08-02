@@ -4,7 +4,7 @@
     <!-- Primary tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="GSC, gscstunion, 地球社会共生学部, 青学, 春から青学, 春から地球, 相模原キャンパス">
+    <meta name="keywords" content="GSC, gscstunion, 学連, 地球社会共生学部, 青学, 春から青学, 春から地球, 相模原キャンパス">
     <meta name="description" content="地球社会共生学部公認の団体「学生連合」は、学部の魅力を学生目線から高める団体です。盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。">
     <!-- Open graph / Facebook -->
     <meta property="og:title" content="<?php echo $pageTitle; ?>">
@@ -22,8 +22,11 @@
     <meta name="google-site-verification" content="HEqZhtsd512Z-yqCVwc5-d8iAnR-wA0n_cJv3Bjlkak" />
 
     <title><?php echo $pageTitle; ?></title>
-    <link rel="stylesheet" href="<?php echo $dir_back; ?>assets/style.css">
+    <link rel="stylesheet" href="<?php echo $dir_back; ?>assets/css/style.css">
     <link rel="icon" href="<?php echo $dir_back; ?>assets/images/icon/favicon.jpg" type="image/jpg">
+    <link rel="preload" href="<?php echo $dir_back; ?>assets/fonts/NotoSerifJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="<?php echo $dir_back; ?>assets/fonts/MPLUSRounded1c-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
 </head>
 <body>
     <header>

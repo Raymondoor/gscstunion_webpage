@@ -28,7 +28,7 @@
             <button id="b2t" title="ページの先頭に戻る"><img src="<?php echo $dir_back; ?>assets/images/uparrow.png" alt="ページの先頭に戻る" id="b2timg"></button>
         </div>
     </footer>
-    <script src="<?php echo $dir_back; ?>assets/index.js"></script>
+    <script type="module" src="<?php echo $dir_back; ?>assets/js/index.js"></script>
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
