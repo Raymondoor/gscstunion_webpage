@@ -6,6 +6,14 @@ body {
     padding: 0;
     background-color: rgb(255, 255, 255);
 }
+@font-face {
+    font-family: "M-plus rounded";
+    src: url("./fonts/MPLUSRounded1c-Regular.ttf");
+}
+@font-face {
+    font-family: "M-plus rounded bold";
+    src: url("./fonts/MPLUSRounded1c-Bold.ttf");
+}
 
 header {
     font-family: Arial, Helvetica, sans-serif;
@@ -149,13 +157,9 @@ footer {
 }
 
 main {
-    
-    h2 {
-        text-align: center;
-        color: rgb(0, 0, 0);
-        font-size: clamp(40px, 4vw, 100px);
-        margin: 0;
-    }
+
+    /* ./index.php */
+
     #home-banner {
         text-align: center;
         color: white;
@@ -165,12 +169,51 @@ main {
         background-size: cover;
         padding: 20px 0;
         h2 {
+            text-align: center;
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            margin: 0;
             color: white;
         }
+
         h3 {
             letter-spacing: 4px;
+            font-size: clamp(0.8rem, 1.5vw, 2rem);
+        }
+        h4 {
+            letter-spacing: 1px;
+            font-size: clamp(0.75rem, 1.2vw, 1.8rem);
         }
     }
+    #aboutus {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px 0;
+
+        #slogan {
+            
+            color: rgb(146, 146, 146);
+            width: min(500px, 35%);
+            padding-left: 1.5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1rem, 2.75vw, 2.75rem);
+            font-family: "M-plus rounded bold";
+        }
+        #au-description {
+            
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2rem;
+            line-height: 1.8;
+            width: min(700px, 45%);
+            font-size: clamp(0.66rem, 1.33vw, 1rem);
+            font-family: "M-plus rounded";
+        }
+        
+    }
+
+    /* articles/index.php */
     #art-h2 {
         display: flex;
         align-items: center;
@@ -187,23 +230,21 @@ main {
         }
             
     }
-}
+    #sortContainer {
+        display: flex;
 
-/* articles/index.php */
-#sortContainer {
-    display: flex;
+    }
 
-}
-
-.sort {
-    padding: 2px;
-    margin: 0 10px;
-}
-select {
-    border: none;
-    outline: none;
-}
-#article-main {
-    max-width: 90%;
-    margin: 0 auto;
+    .sort {
+        padding: 2px;
+        margin: 0 10px;
+    }
+    select {
+        border: none;
+        outline: none;
+    }
+    #article-main {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }

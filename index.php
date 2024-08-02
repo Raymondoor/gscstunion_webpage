@@ -15,6 +15,15 @@ include "{$dir_back}backend/app/views/header.php";
             <h3>地球社会共生学部学生連合</h3>
             <h4>青山学院大学</h4>
         </div>
+        <div id="aboutus">
+            <div id="slogan">
+                <h2>今日の挑戦、<br>明日の共生。</h2>
+            </div>
+            <div id="au-description">
+                <p>地球社会共生学部公認の団体「学生連合」は、学部の魅力を学生目線から高める団体です。
+                    盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。</p>
+            </div>
+        </div>
     </main>
 
 <?php
