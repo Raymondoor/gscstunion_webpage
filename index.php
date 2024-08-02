@@ -1,6 +1,6 @@
 <?php
 //Functional files below
-$dir_back = "";
+$dir_back = "./";
 require_once "{$dir_back}backend/app/lib/init.php";
 require_once "{$dir_back}backend/app/config/init.php";
 //GUI files below
