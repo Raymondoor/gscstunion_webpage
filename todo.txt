@@ -1,6 +1,11 @@
-edit main page content
-    write aboutus
+edit root page content
     integrate sns widgets
+
+admin
+    make article edit page
+
+login
+    make login page
 
 footer
     "contact from ig or x" message at end
