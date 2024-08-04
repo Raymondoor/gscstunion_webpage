@@ -59,9 +59,13 @@ header {
                 text-align: center;
                 transition: all 240ms;
             }
+            a:visited {
+                color: hsl(0, 0%, 25%);
+            }
             a:hover {
                 color: hsl(180, 100%, 35%);
             }
+
         }
         p {
             margin: 0;
@@ -164,7 +168,7 @@ main {
     #home-banner {
         text-align: center;
         color: white;
-        background-image: url(../images/chapel.jpeg);
+        background-image: url(../images/chapel.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
