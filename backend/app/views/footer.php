@@ -28,7 +28,17 @@
             <button id="b2t" title="ページの先頭に戻る"><img src="<?php echo $dir_back; ?>assets/images/uparrow.png" alt="ページの先頭に戻る" id="b2timg"></button>
         </div>
     </footer>
-    <script type="module" src="<?php echo $dir_back; ?>assets/js/index.js"></script>
+    <script src="<?php echo $dir_back; ?>assets/js/index.js"></script>
+    <?php 
+    function loadScript($dir) {
+        switch ($dir) {
+            case 'articles':
+                echo "<script src=\"../assets/js/lib/sort-article.js\"></script>";
+                break;
+        }
+    }
+    loadScript($dir);
+    ?>
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",

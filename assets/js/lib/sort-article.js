@@ -43,7 +43,7 @@ function sortAndUpdateDisplay() {
 selectElement.addEventListener('change', sortAndUpdateDisplay);
 sortDirElement.addEventListener('change', sortAndUpdateDisplay);
 
-export function updateDisplay(data) {
+function updateDisplay(data) {
     articleContainer.innerHTML = '';  // Clear existing content
     data.forEach(article => {
         let articleDiv = document.createElement('div');
@@ -78,4 +78,4 @@ export function updateDisplay(data) {
         articleContainer.appendChild(document.createElement('hr'));
     });
     console.log('Sort algorythm executed')
-}
+};

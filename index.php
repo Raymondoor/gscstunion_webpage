@@ -1,6 +1,7 @@
 <?php
 //Functional files below
 $dir_back = "./";
+$dir = "home";
 require_once "{$dir_back}backend/app/lib/init.php";
 require_once "{$dir_back}backend/app/config/init.php";
 //GUI files below
@@ -32,7 +33,7 @@ include "{$dir_back}backend/app/views/header.php";
                     <img src="<?php echo $dir_back; ?>assets/images/icon/WInstagram.png" alt="Instagram" class="socialpagelogo">Instagram</a>
                 </div>
                 <div class="spn-container">
-                    <a href="<?php echo $X; ?>" target="_blank" title="Instagram">
+                    <a href="<?php echo $X; ?>" target="_blank" title="X(Twitter)">
                     <img src="<?php echo $dir_back; ?>assets/images/icon/WX.png" alt="Instagram" class="socialpagelogo">X(Twitter)</a>
                 </div>
             </div>
