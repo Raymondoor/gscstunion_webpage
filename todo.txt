@@ -5,4 +5,3 @@ edit main page content
 footer
     "contact from ig or x" message at end
     manage links
-    b2t doesn't work only in root

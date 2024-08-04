@@ -10,20 +10,40 @@ www.cc.aoyama.ac.jp
 			index.php
 			
 		/assets
-			style.css
-			index.js
-				/images
-					logo.png
+			/css
+				style.css
+			/js
+				index.js
+				/lib
+					sort-artticle.js
+			/images
+				campuspaint.jpg
+				chapel.jpg
+				uparrow.png
+				/icon
+					favicon.jpg
+					GSC_logo.png
+					Instagram.png
+					WInstagram.png
+					WX.png
+					X.png
+			/fonts
+
 		/backend
 			.htaccess
 			/app
 				/config
 					init.php
+					databasedir.php
 					homedir.php
 				/lib
 					init.php
 					add_article.php
+					get_article.php
+					list_article.php
+					password_hash.php
 					session_time.php
+					snslinks.php
 				/views
 					header.php
 					footer.php

@@ -30,10 +30,20 @@
     </footer>
     <script src="<?php echo $dir_back; ?>assets/js/index.js"></script>
     <?php 
+    // call a specific script for each directory or page
     function loadScript($dir) {
         switch ($dir) {
+            case 'home':
+                echo "";
+                break;
             case 'articles':
                 echo "<script src=\"../assets/js/lib/sort-article.js\"></script>";
+                break;
+            case 'admin':
+                echo "";
+                break;
+            case 'login':
+                echo "";
                 break;
         }
     }
