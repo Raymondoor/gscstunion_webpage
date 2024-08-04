@@ -12,14 +12,15 @@
     <meta property="og:image" content="<?php echo $dir_back; ?>assets/images/icon/GSC_logo.png" />
     <meta property="og:url" content="https://www.cc.aoyama.ac.jp/~gscstunion/" />
     <meta property="og:site_name" content="GSC 学生連合" />
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <!-- X / Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
     <meta name="twitter:description" content="地球社会共生学部公認の団体「学生連合」は、学部の魅力を学生目線から高める団体です。盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。">
-    <meta name="twitter:image" content="<?php echo $dir_back; ?>assets/images/icon/GSC_logo.png">
+    <meta name="twitter:image" content="<?php echo $dir_back; ?>assets/images/icon/GSC_logo.png" />
 
     <meta name="google-site-verification" content="HEqZhtsd512Z-yqCVwc5-d8iAnR-wA0n_cJv3Bjlkak" />
+    <meta name="msvalidate.01" content="BFFBEAF9A3D335C1BB2266489621DD53" />
 
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="<?php echo $dir_back; ?>assets/css/style.css">
