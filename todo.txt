@@ -1,12 +1,19 @@
-edit root page content
-    integrate sns widgets
-
-admin
-    make article edit page
-
-login
-    make login page
+head
+    change title accordingly
+        eg. 【公式】
 
 footer
     "contact from ig or x" message at end
+        or
+    change mail address (current one may be abandoned)
     manage links
+
+./
+    integrate sns widgets
+
+/admin
+    make article edit page
+
+/admin/login
+    make login page
+
