@@ -21,8 +21,9 @@ www.cc.aoyama.ac.jp
 				chapel.jpg
 				uparrow.png
 				/icon
-					favicon.jpg
+					favicon.ico
 					GSC_logo.png
+					GSCstunionlogo.jpg
 					Instagram.png
 					WInstagram.png
 					WX.png
