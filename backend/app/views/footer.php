@@ -65,7 +65,7 @@
             "addressRegion": "Kanagawa",
             "postalCode": "252-5258",
             "addressCountry": "JP"
-        },
+        }
     }
     </script>
 
