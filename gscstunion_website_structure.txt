@@ -4,8 +4,8 @@ www.cc.aoyama.ac.jp
 		index.php
 		/admin
 			.htaccess
-				login.php
-				index.php
+			login.php
+			index.php
 		/articles
 			index.php
 			
