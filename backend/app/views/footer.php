@@ -5,7 +5,7 @@
                 <p><a href="https://www.aoyama.ac.jp/">青山学院大学&#8663</a></p>
             </div>
             <div id="f-access">
-                <p><a href="https://maps.app.goo.gl/T55JukdbwNe2TcaY6" target="_blank">
+                <p><a href="https://www.openstreetmap.org/way/72302039" target="_blank">
                     〒252-5258<br> 
                     神奈川県相模原市中央区<br>
                     淵野辺 5-10-1&#8663
