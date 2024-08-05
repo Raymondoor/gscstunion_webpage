@@ -24,7 +24,7 @@
 
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="<?php echo $dir_back; ?>assets/css/style.css">
-    <link rel="icon" href="<?php echo $dir_back; ?>assets/images/icon/favicon.jpg" type="image/jpg">
+    <link rel="icon" href="<?php echo $dir_back; ?>assets/images/icon/favicon.ico" type="image/x-icon">
     <link rel="preload" href="<?php echo $dir_back; ?>assets/fonts/NotoSerifJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="<?php echo $dir_back; ?>assets/fonts/MPLUSRounded1c-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
