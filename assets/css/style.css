@@ -319,7 +319,7 @@ main {
         max-width: clamp(40%, 70%, 95%);
         margin: 20px auto;
         border: none;
-        border-radius: 20px;
+        border-radius: 25px;
         background-color: hsl(0, 0%, 80%);
     }
 }
