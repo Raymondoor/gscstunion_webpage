@@ -16,7 +16,7 @@
         <div id="fnavbar">
             <div id="license">
                 GSC 学生連合<br>
-                gscstunion@aoyama.jp<br>
+                notsetyet@domain.com<br>
                 <?php echo date("Y"); ?> &#169 All rights reserved
             </div>
             <div id="f-sns-link">

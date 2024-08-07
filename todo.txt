@@ -13,7 +13,3 @@ footer
 
 /admin
     make article edit page
-
-/admin/login
-    make login page
-
