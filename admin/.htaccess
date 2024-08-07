@@ -1,0 +1,8 @@
+RewriteEngine on
+
+# Exempt the login page from redirection
+RewriteCond %{REQUEST_URI} !^/admin/login.php$
+
+# Redirect if the "verified" cookie is not set to "yes"
+RewriteCond %{HTTP_COOKIE} !verified=yes
+RewriteRule ^(.*)$ /admin/login.php [R=302,L,NC]
