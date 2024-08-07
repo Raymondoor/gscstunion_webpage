@@ -1,6 +1,7 @@
 <?php
 $dir_back = "../";
 include "{$dir_back}backend/app/lib/login_handle.php";
+include "{$dir_back}backend/app/lib/session_time.php";
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
 
@@ -32,7 +33,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
             exit;
         }
         else if ($accept) {
-            setcookie("verified", "yes", time() + 3600,"/");
+            setcookie("verified", "yes", time() + $sessionTime,"/");
             header("Location: {$dir_back}admin/");
             exit;
         }

@@ -8,7 +8,8 @@ www.cc.aoyama.ac.jp
 			index.php
 		/articles
 			index.php
-			
+		/api
+			login_bridge.php
 		/assets
 			/css
 				style.css
@@ -42,6 +43,7 @@ www.cc.aoyama.ac.jp
 					add_article.php
 					get_article.php
 					list_article.php
+					login_handle.php
 					password_hash.php
 					session_time.php
 					snslinks.php

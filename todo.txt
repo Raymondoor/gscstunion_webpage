@@ -1,7 +1,3 @@
-head
-    change title accordingly
-        eg. 【公式】
-
 footer
     "contact from ig or x" message at end
         or
