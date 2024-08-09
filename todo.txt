@@ -6,6 +6,7 @@ footer
 
 ./
     integrate sns widgets
+    ask for embed permission ? (I hate this stupid api thing)
 
 /admin
     make article edit page
