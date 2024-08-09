@@ -10,3 +10,7 @@ footer
 
 /admin
     make article edit page
+
+header/footer
+    if($client) {display seo content}
+    else {do not display}
