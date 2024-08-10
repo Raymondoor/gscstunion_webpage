@@ -239,6 +239,10 @@ main {
         background-color: #479e88;
         color: white;
         text-align: center;
+        ::selection {
+            background-color: hsl(33, 100%, 88%);
+            color: hsl(0, 0%, 50%);
+        }
 
         #socialpagenav {
             display: flex;
@@ -268,7 +272,7 @@ main {
         }
         #hdescription {
             color: hsl(0, 0%, 100%);
-            text-decoration: underline;
+            text-decoration: none;
             padding: 50px 5px;
             max-width: 60%;
             margin: auto;
