@@ -30,13 +30,13 @@
     <script src="<?php echo $dir_back; ?>assets/js/index.js"></script>
     <?php 
     // call a specific script for each directory or page
-    function loadScript($dir) {
+    function loadScript($dir, $dir_back) {
         switch ($dir) {
             case 'home':
-                echo "<script src=\"../assets/js/lib/home.js\"></script>";
+                echo '<script src="' . $dir_back . 'assets/js/lib/home.js"></script>';
                 break;
             case 'articles':
-                echo "<script src=\"../assets/js/lib/articles.js\"></script>";
+                echo '<script src="' . $dir_back . 'assets/js/lib/articles.js"></script>';
                 break;
             case 'admin':
                 echo "";
@@ -46,7 +46,7 @@
                 break;
         }
     }
-    loadScript($dir);
+    loadScript($dir, $dir_back);
     ?>
     <script type="application/ld+json">
     {
