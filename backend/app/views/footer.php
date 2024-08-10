@@ -16,7 +16,6 @@
         <div id="fnavbar">
             <div id="license">
                 GSC 学生連合<br>
-                notsetyet@domain.com<br>
                 <?php echo date("Y"); ?> &#169 All rights reserved
             </div>
             <div id="f-sns-link">
@@ -34,10 +33,10 @@
     function loadScript($dir) {
         switch ($dir) {
             case 'home':
-                echo "";
+                echo "<script src=\"../assets/js/lib/home.js\"></script>";
                 break;
             case 'articles':
-                echo "<script src=\"../assets/js/lib/sort-article.js\"></script>";
+                echo "<script src=\"../assets/js/lib/articles.js\"></script>";
                 break;
             case 'admin':
                 echo "";

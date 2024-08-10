@@ -21,6 +21,16 @@ body {
     src: url("../fonts/NotoSerifJP-Regular.woff2");
     font-display: swap;
 }
+@keyframes fallIn {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 /* GSC color #479e88 */
 
 header {
@@ -257,20 +267,29 @@ main {
                 }
         }
 
-        #socialpost {
+        #hdescription {
             color: hsl(0, 0%, 100%);
             text-decoration: underline;
-            padding: 15px 5px;
+            padding: 50px 5px;
             max-width: 60%;
             margin: auto;
-            font-size: clamp(0.7rem, 1.1vw, 1.5rem);
+            font-size: clamp(0.6rem, 1.2vw, 1.5rem);
             text-align: left;
             letter-spacing: 1px;
+            opacity: 0;
             a {
                 text-decoration: none;
                 color: hsl(180, 100%, 50%);
             }
+            h4 {
+                margin: 0;
+                padding: 0;
+            }
+              
         }
+        .start-animation {
+            animation: fallIn 1.5s ease-out forwards;
+          }
     }
 
     /* articles/index.php */

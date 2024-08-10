@@ -37,10 +37,11 @@ include "{$dir_back}backend/app/views/header.php";
                     <img src="<?php echo $dir_back; ?>assets/images/icon/WX.png" alt="Instagram" class="socialpagelogo">X(Twitter)</a>
                 </div>
             </div>
-            <div id="socialpost">
+            <div id="hdescription">
+            <h4>青山学院大学 地球社会共生学部 学生連合の公式HPです。🌐</h4>
             <p>
-                現在は主に「<a href="https://instagram.com/gscstunion" target="_blank" title="Instagram">Instagram</a>」にて活動しています！<br>また、春には高校生向けの告知を
-                「<a href="https://x.com/GSCstunion" target="_blank" title="X(Twitter)">X</a>」で行っています。興味のある方は是非上のリンクからご覧ください！
+                現在は主に「<a href="<?php echo $Instagram; ?>" target="_blank" title="Instagram">Instagram</a>」にて活動しています！また、春には高校生向けの告知を
+                「<a href="<?php echo $X; ?>" target="_blank" title="X(Twitter)">X</a>」でも行っています。興味のある方は是非上のリンクからご覧ください！質問等、随時SNSのDMにて受け付けています！
             </p>
             </div>
         </div>
