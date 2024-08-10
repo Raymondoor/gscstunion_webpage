@@ -255,15 +255,21 @@ main {
                     padding: 0 8px;
                     
                 }
-            }
+        }
 
         #socialpost {
-            color: hsl(0, 0%, 25%);
-            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+            text-decoration: underline;
             padding: 15px 5px;
-            margin: 0;
-            display: block;
-            text-align: center;
+            max-width: 60%;
+            margin: auto;
+            font-size: clamp(0.7rem, 1.1vw, 1.5rem);
+            text-align: left;
+            letter-spacing: 1px;
+            a {
+                text-decoration: none;
+                color: hsl(180, 100%, 50%);
+            }
         }
     }
 

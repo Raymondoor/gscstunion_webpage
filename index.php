@@ -38,7 +38,10 @@ include "{$dir_back}backend/app/views/header.php";
                 </div>
             </div>
             <div id="socialpost">
-            // Picture goes here
+            <p>
+                現在は主に「<a href="https://instagram.com/gscstunion" target="_blank" title="Instagram">Instagram</a>」にて活動しています！<br>また、春には高校生向けの告知を
+                「<a href="https://x.com/GSCstunion" target="_blank" title="X(Twitter)">X</a>」で行っています。興味のある方は是非上のリンクからご覧ください！
+            </p>
             </div>
         </div>
     </main>
