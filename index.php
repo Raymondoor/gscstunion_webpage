@@ -40,8 +40,7 @@ include "{$dir_back}backend/app/views/header.php";
             <div id="hdescription">
             <h4>青山学院大学 地球社会共生学部 学生連合の公式HPです。🌐</h4>
             <p>
-                現在は主に「<a href="<?php echo $Instagram; ?>" target="_blank" title="Instagram">Instagram</a>」にて活動しています！また、春には高校生向けの告知を
-                「<a href="<?php echo $X; ?>" target="_blank" title="X(Twitter)">X</a>」でも行っています。興味のある方は是非上のリンクからご覧ください！質問等、随時SNSのDMにて受け付けています！
+                現在は主に「<a href="<?php echo $Instagram; ?>" target="_blank" title="Instagram">Instagram</a>」にて活動しています！また、春には高校生向けの告知を「<a href="<?php echo $X; ?>" target="_blank" title="X(Twitter)">X</a>」でも行っています。興味のある方は是非上のリンクからご覧ください！質問等、随時SNSのDMにて受け付けています！
             </p>
             </div>
         </div>
