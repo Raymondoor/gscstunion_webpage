@@ -1,5 +1,8 @@
 RewriteEngine on
 
+# RewriteBase if necessary
+RewriteBase /admin/
+
 # Exempt the login page from redirection
 RewriteCond %{REQUEST_URI} !^/admin/login.php$
 
