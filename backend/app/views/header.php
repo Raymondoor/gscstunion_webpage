@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <!-- Primary tags -->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="GSC, gscstunion, 学連, 地球社会共生学部, 青学, 春から青学, 春から地球, 相模原キャンパス">
     <meta name="description" content="地球社会共生学部公認の団体「学生連合」は、学部の魅力を学生目線から高める団体です。盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。">
@@ -19,8 +19,10 @@
     <meta name="twitter:description" content="地球社会共生学部公認の団体「学生連合」は、学部の魅力を学生目線から高める団体です。盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。">
     <meta name="twitter:image" content="<?php echo $dir_back; ?>assets/images/icon/GSC_logo.png" />
 
+<?php if($dir == "home" || $dir == "articles") { ?>
     <meta name="google-site-verification" content="HEqZhtsd512Z-yqCVwc5-d8iAnR-wA0n_cJv3Bjlkak" />
     <meta name="msvalidate.01" content="BFFBEAF9A3D335C1BB2266489621DD53" />
+<?php }; ?>
 
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="<?php echo $dir_back; ?>assets/css/style.css">

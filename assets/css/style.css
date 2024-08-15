@@ -334,6 +334,20 @@ main {
         margin: 5px auto;
     }
 
+    /* articles/page */
+    #pa {
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    #padate {
+        font-size: small;
+        color: hsl(0, 0%, 33%);
+    }
+    #pamain {
+        letter-spacing: 1px;
+    }
+
     /* admin/login.php */
     #login-h2 {
         text-align: center;

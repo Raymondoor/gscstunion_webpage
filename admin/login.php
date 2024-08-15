@@ -13,7 +13,7 @@ require_once "{$dir_back}backend/app/views/header.php";
     <main>
         <h2 id="login-h2">Login Page</h2>
         <span id="login-form">
-                <form action="../api/login_bridge.php" method="post">
+            <form action="../api/login_bridge.php" method="post">
                 <label>Username:</label><br>
                 <input type="text" name="username" autofocus autocomplete="off"><br>
                 <label>Password:</label><br>
