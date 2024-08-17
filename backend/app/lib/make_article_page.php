@@ -18,17 +18,19 @@ foreach ($articles as $key => $article) {
     $fileContent .= '?' . '>' . "\n\n";
     $fileContent .= '    <main>' . "\n";
     $fileContent .= '       <div id="pa">' . "\n";
-    $fileContent .= '        <h2 id="patitle"><?php echo $pageTitle; ?></h2>' . "\n";
-    $fileContent .= '        <p id="padate">' . htmlspecialchars($article['date']) .'</p>' . "\n";
-    $fileContent .= '        <p id="pamain">' . htmlspecialchars($article['main']) . '</p>' . "\n";  // Output full article or adapt as necessary
-    $fileContent .= '        <br>' . "\n";
+    $fileContent .= '           <h2 id="patitle"><?php echo $pageTitle; ?></h2>' . "\n";
+    $fileContent .= '           <p id="padate">' . htmlspecialchars($article['date']) .'</p>' . "\n";
+    $fileContent .= '           <p id="pamain">' . htmlspecialchars($article['main']) . '</p>' . "\n";  // Output full article or adapt as necessary
+    $fileContent .= '           <br>' . "\n";
     
     if (!empty($article['url'])) {
         if (strpos($article['url'], 'youtu.be') !== false || strpos($article['url'], 'youtube.com') !== false) {
             // Extract the YouTube video ID and embed it
             preg_match('/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/))([^"\&\?\/\s]{11})/i', $article['url'], $matches);
             $videoId = $matches[1];
-            $fileContent .= '       <iframe width="560" height="315" src="https://www.youtube.com/embed/' . $videoId . '" frameborder="0" allowfullscreen></iframe>' . "\n";
+            $fileContent .= '           <div class="iframe-container">' . "\n";
+            $fileContent .= '               <iframe class="iframe" src="https://www.youtube.com/embed/' . $videoId . '" frameborder="0" allowfullscreen></iframe>' . "\n";
+            $fileContent .= '           </div>' . "\n";
         } elseif (strpos($article['url'], 'x.com') !== false) {
             // Specific content for x.com
             $fileContent .= '       <div>Special content for x.com here</div>' . "\n";
@@ -39,7 +41,7 @@ foreach ($articles as $key => $article) {
         $fileContent .= "\n";
     }
 
-    $fileContent .= '       <br>' . "\n";
+    $fileContent .= '           <br>' . "\n";
     $fileContent .= '       </div>' . "\n";
     $fileContent .= '    </main>' . "\n";
     $fileContent .= '<' . '?php' . "\n";
