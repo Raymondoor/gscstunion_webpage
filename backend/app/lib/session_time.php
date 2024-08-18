@@ -1,4 +1,4 @@
 <?php
 // seconds
 // 1h = 3600
-$sessionTime = 1800;
+$sessionTime = 3600;
