@@ -371,6 +371,11 @@ main {
         width: 100%;
         height: 100%;
     }
+    img {
+        width: 400px;
+        max-width: 50%;
+        border: 1px solid black;
+    }
 
     /* admin/login.php */
     #login-h2 {
@@ -382,11 +387,80 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 25px 10px;
-        max-width: clamp(40%, 70%, 95%);
+        padding: 25px 30px;
+        width: fit-content;
         margin: 20px auto;
         border: none;
         border-radius: 25px;
         background-color: hsl(0, 0%, 80%);
+    }
+    /* admin/index.php */
+    #adh2 {
+        text-align: center;
+        font-family: "M-plus rounded", "Arial";
+    }
+    #adh4 {
+        text-align: center;
+        font-family: "M-plus rounded", "Arial";
+    }
+    #addScriptform {
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+
+        input {
+            font-size: 16px;
+        }
+        #title {
+            width: 50%;
+            font-size: 20px;
+            font-family: "M-plus rounded", "Arial";
+        }
+        #url {
+            width: 75vw;
+            font-family: "M-plus rounded", "Arial";
+        }
+
+        textarea {
+            resize: vertical;
+            max-height: 66vh;
+            min-height: 100px;
+            width: 80vw;
+            font-size: 16px;
+            font-family: "M-plus rounded", "Arial";
+        }
+    }
+    #adexm {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 1%;
+        width: fit-content;
+        max-width: 85%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-family: "M-plus rounded", "Arial";
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+        #padate {
+            font-size: small;
+            color: hsl(0, 0%, 33%);
+        }
+        #pamain {
+            letter-spacing: 1px;
+        }
+        img {
+            width: 350px;
+            max-width: 50%;
+            border: 1px solid black;
+        }
     }
 }
