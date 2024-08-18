@@ -1,5 +1,6 @@
 <?php
 include(__DIR__ . '/../backend/app/lib/make_article_page.php');
+include(__DIR__ . '/../backend/app/lib/delete_article_page.php');
 // Define the path to the SQLite database file
 $databasePath = __DIR__ . '/../backend/data/database.db';
 
@@ -75,6 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([$articleId]);
         $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
         make_article_page($articles);
+        delete_orphaned_article_pages();
     } else {
         echo "Error submitting article.";
     }
