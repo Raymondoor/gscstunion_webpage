@@ -5,6 +5,13 @@ include "{$dir_back}backend/app/lib/session_time.php";
 
 if (isset($_POST["username"]) && isset($_POST["password"])) {
 
+    session_start();
+
+    // Check if the CSRF token in the session matches the one in the form
+    if ($_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+        die('CSRF token validation failed');
+    }
+
     function validate($input) {
         $input = trim($input);
         $input = stripslashes($input);
