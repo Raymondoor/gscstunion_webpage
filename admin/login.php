@@ -21,7 +21,7 @@ if (empty($_SESSION['csrf_token'])) {
         <h2 id="login-h2">Login Page</h2>
         <span id="login-form">
             <form action="../api/login_bridge.php" method="post">
-                <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+                <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>">
                 <label>Username:</label><br>
                 <input type="text" name="username" autofocus autocomplete="off"><br>
                 <label>Password:</label><br>
