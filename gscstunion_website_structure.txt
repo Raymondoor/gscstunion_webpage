@@ -52,3 +52,26 @@ www.cc.aoyama.ac.jp
 					footer.php
 			/data
 				database.db
+
+---
+re-structure
+/
+index.php
+phpinfo.php
+app/
+	api/
+	data/
+		SEO.json
+		database.db
+	templates/
+		header.php
+		footer.php
+		index.php
+admin/
+	login.php
+	index.php
+articles/
+	index.php
+	page/
+		id.php
+assets/
