@@ -60,6 +60,7 @@ index.php
 phpinfo.php
 app/
 	api/
+		form/
 	data/
 		SEO.json
 		database.db
@@ -75,3 +76,21 @@ articles/
 	page/
 		id.php
 assets/
+	images/
+		brand/
+		main/
+		share/
+	script/
+		script.js
+		lib/
+		#dir.js
+	style/
+		style.css
+		envvar/
+			envvar.css
+		font/
+		lib/
+			#dir.css
+		template/
+			header.css
+			footer.css
