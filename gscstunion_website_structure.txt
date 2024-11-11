@@ -60,6 +60,8 @@ index.php
 phpinfo.php
 app/
 	api/
+		general/
+			
 		form/
 	data/
 		SEO.json
@@ -86,8 +88,8 @@ assets/
 		#dir.js
 	style/
 		style.css
-		envvar/
-			envvar.css
+		var/
+			var.css
 		font/
 		lib/
 			#dir.css
