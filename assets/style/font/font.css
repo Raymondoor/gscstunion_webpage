@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "M-plus rounded";
+    src: url("MPLUSRounded1c-Regular.woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "M-plus rounded bold";
+    src: url("MPLUSRounded1c-Bold.woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Noto Serif";
+    src: url("NotoSerifJP-Regular.woff2");
+    font-display: swap;
+}

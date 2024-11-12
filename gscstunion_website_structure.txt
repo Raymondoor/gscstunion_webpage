@@ -61,7 +61,7 @@ phpinfo.php
 app/
 	api/
 		general/
-			
+
 		form/
 	data/
 		SEO.json
@@ -78,7 +78,7 @@ articles/
 	page/
 		id.php
 assets/
-	images/
+	image/
 		brand/
 		main/
 		share/
