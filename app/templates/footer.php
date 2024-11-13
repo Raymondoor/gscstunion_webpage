@@ -33,10 +33,10 @@
     function loadScript($dir, $root) {
         switch ($dir) {
             case 'home':
-                echo '<script src="' . $root . 'assets/js/lib/home.js"></script>';
+                echo '<script src="' . $root . 'assets/js/lib/HOME.js"></script>';
                 break;
             case 'articles':
-                echo '<script src="' . $root . 'assets/js/lib/articles.js"></script>';
+                echo '<script src="' . $root . 'assets/js/lib/ARTICLES.js"></script>';
                 break;
             case 'admin':
                 echo "";
