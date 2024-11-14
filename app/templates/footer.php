@@ -19,26 +19,27 @@
                 <?= date("Y"); ?> &#169 All rights reserved
             </div>
             <div id="f-sns-link">
-                <a href="<?= $SEO['SNS']['IG']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['IG']['Title'] ?>"><img src="<?= $root . IMAGES_LINK; ?>/icon/Instagram.png" alt="<?= $SEO['SNS']['IG']['Title'] ?>" class="sns_image"></a>
-                <a href="<?= $SEO['SNS']['X']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['X']['Title'] ?>"><img src="<?= $root . IMAGES_LINK; ?>/icon/X.png" alt="<?= $SEO['SNS']['X']['Title'] ?>" class="sns_image"></a>
+                <a href="<?= $SEO['SNS']['IG']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['IG']['Title'] ?>"><img src="<?= $root . IMAGES_LINK; ?>/share/Instagram.png" alt="<?= $SEO['SNS']['IG']['Title'] ?>" class="sns_image"></a>
+                <a href="<?= $SEO['SNS']['X']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['X']['Title'] ?>"><img src="<?= $root . IMAGES_LINK; ?>/share/X.png" alt="<?= $SEO['SNS']['X']['Title'] ?>" class="sns_image"></a>
             </div>
         </div>
         <div id="back2top">
-            <button id="b2t" title="ページの先頭に戻る"><img src="<?= $root . IMAGES_LINK; ?>/uparrow.png" alt="ページの先頭に戻る" id="b2timg"></button>
+            <button id="b2t" title="ページの先頭に戻る"><img src="<?= $root . IMAGES_LINK; ?>/share/uparrow.png" alt="ページの先頭に戻る" id="b2timg"></button>
         </div>
     </footer>
     <script src="<?= $root . SCRIPT_LINK; ?>/index.js"></script>
     <?php 
     // call a specific script for each directory or page
-    function loadScript($dir, $root) {
-        switch ($dir) {
-            case 'home':
-                echo '<script src="' . $root . 'assets/js/lib/HOME.js"></script>';
+    function loadScript($file) {
+        global $root;
+        switch ($file) {
+            case 'HOME':
+                echo '<script src="' . $root . SCRIPT_LINK . '/lib/HOME.js"></script>';
                 break;
-            case 'articles':
-                echo '<script src="' . $root . 'assets/js/lib/ARTICLES.js"></script>';
+            case 'ARTICLES':
+                echo '<script src="' . $root . SCRIPT_LINK . '/lib/ARTICLES.js"></script>';
                 break;
-            case 'admin':
+            case 'ADMIN':
                 echo "";
                 break;
             case 'login':
@@ -46,7 +47,7 @@
                 break;
         }
     }
-    loadScript($dir, $root);
+    loadScript($file);
 if ($file == 'HOME' || $file == 'ARTICLES') {
     ob_start();
 ?>

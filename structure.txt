@@ -77,22 +77,22 @@ articles/
 	index.php
 	page/
 		id.php
-assets/
-	image/
-		brand/
-		main/
-		share/
-	script/
+assets/ 1
+	image/ 1
+		brand/ 1
+		main/ 1
+		share/ 1
+	script/ 1
 		script.js
-		lib/
-		#dir.js
-	style/
+		lib/ 1
+			#dir.js
+	style/ 1
 		style.css
-		var/
+		var/ 1
 			var.css
-		font/
+		font/ 1
 		lib/
 			#dir.css
-		template/
+		template/ 1
 			header.css
 			footer.css

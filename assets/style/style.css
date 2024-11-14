@@ -29,7 +29,7 @@ main {
     #home-banner {
         text-align: center;
         color: white;
-        background-image: url(../image/chapel.jpg);
+        background-image: url(../image/main/chapel.jpg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -152,7 +152,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url(../images/campuspaint.jpg);
+        background-image: url(../image/main/campuspaint.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;

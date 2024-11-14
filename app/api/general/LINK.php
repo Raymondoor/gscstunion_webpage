@@ -2,8 +2,8 @@
 require_once (__DIR__ . '/HEADER.php');
 // LINK
 // root
-define('ROOT_LINK', '');
-define('APP_LINK', request_protocol() . $_SERVER['SERVER_NAME']);
+define('ROOT_LINK', ''); // add '/' in front if (!$_SERVER['SERVER_NAME'] == ROOT)
+define('APP_LINK', request_protocol() . $_SERVER['SERVER_NAME'] . ROOT_LINK);
 // articles
 define('ARTICLES_LINK', ROOT_LINK . '/articles');
 // assets

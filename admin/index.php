@@ -1,7 +1,7 @@
 <?php
 //Functional files below
 $dir_back = "../";
-$dir = "admin";
+$dir = "ADMIN";
 require_once "{$dir_back}backend/app/lib/init.php";
 require_once "{$dir_back}backend/app/config/init.php";
 //GUI files below

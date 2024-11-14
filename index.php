@@ -32,11 +32,11 @@ include_once (TEMPLATE_DIR . '/header.php');
         <div id="socialpagenav">
             <div class="spn-container">
                 <a href="<?= $SEO['SNS']['IG']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['IG']['Title'] ?>">
-                <img src="<?= $root . IMAGES_LINK; ?>/icon/WInstagram.png" alt="<?= $SEO['SNS']['IG']['Title'] ?>" class="socialpagelogo">Instagram</a>
+                <img src="<?= $root . IMAGES_LINK; ?>/share/WInstagram.png" alt="<?= $SEO['SNS']['IG']['Title'] ?>" class="socialpagelogo">Instagram</a>
             </div>
             <div class="spn-container">
                 <a href="<?= $SEO['SNS']['X']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['X']['Title'] ?>">
-                <img src="<?= $root . IMAGES_LINK; ?>/icon/WX.png" alt="<?= $SEO['SNS']['X']['Title'] ?>" class="socialpagelogo">X(Twitter)</a>
+                <img src="<?= $root . IMAGES_LINK; ?>/share/WX.png" alt="<?= $SEO['SNS']['X']['Title'] ?>" class="socialpagelogo">X(Twitter)</a>
             </div>
         </div>
         <div id="hdescription">
