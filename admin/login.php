@@ -11,7 +11,7 @@ require_once (API_DIR . '/brand.php');
 // Header
 include_once (TEMPLATE_DIR . '/header.php');
 if (!$_SERVER['REMOTE_ADDR'] === $_SERVER['SERVER_ADDR']) {
-    return_header(ROOT_LINK);
+    return_header('/');
 }
 if (empty($_SESSION['csrf'])) {
     $_SESSION['csrf'] = bin2hex(random_bytes(32));

@@ -34,7 +34,7 @@ include_once (TEMPLATE_DIR . '/header.php');
             </div>
         </div>
         <div id="article-table">            
-            <?= list_articles() ?>
+            <?php echo list_articles() ?>
         </div>
     </div>
 </main>

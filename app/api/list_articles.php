@@ -6,7 +6,7 @@ function list_articles(){
     $query = new DatabaseStatement("SELECT * FROM article ORDER BY id DESC");
     $list = $query->Operation([]);
     $content = '';
-    foreach ($list as $article) {
+    foreach ($list as $key => $article) {
         $content .= '
             <div class="article-container" data-id="' . $article['id'] . '">
                 <span class="a-title"><a href="./page/' . $article['id'] . '.php">' . $article['title'] . '</a></span> / <span class="a-date">' . $article['date'] . '</span><br>
