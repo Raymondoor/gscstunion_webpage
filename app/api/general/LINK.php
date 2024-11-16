@@ -4,9 +4,9 @@ require_once (__DIR__ . '/HEADER.php');
 // root
 define('ROOT_LINK', ''); // add '/' in front if (!$_SERVER['SERVER_NAME'] == ROOT)
 // articles
-define('ARTICLES_LINK', ROOT_LINK . '/articles');
+define('ARTICLES_LINK',  '/articles');
 // assets
-define('ASSETS_LINK', ROOT_LINK . '/assets');
+define('ASSETS_LINK', '/assets');
 define('IMAGES_LINK', ASSETS_LINK . '/image');
 define('SCRIPT_LINK', ASSETS_LINK . '/script');
 define('STYLE_LINK', ASSETS_LINK . '/style');
