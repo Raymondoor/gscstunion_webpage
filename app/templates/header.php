@@ -39,6 +39,8 @@ session_start();
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ARTICLES.css">
 <?php } elseif ($file == 'PAGE') { ?>
         <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/PAGE.css">
+<?php } elseif ($file == 'ADMIN-ARTICLES-NEW') { ?>
+    <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ADMIN-ARTICLES-NEW.css">
 <?php } elseif ($file == 'ADMIN-DEV') { ?>
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ADMIN-DEV.css">
 <?php } ?>

@@ -37,10 +37,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         return_header('/admin/login.php?error=Fill_All_Blanks');
     }
 }
-/*
-$usrnm = str_rot13('');
-$pswrd = password_hash('', PASSWORD_DEFAULT);
-$query = new DatabaseStatement("INSERT INTO user (username, password) VALUES (:username, :password)");
-$result = $query->Operation([':username' => $usrnm, ':password' => $pswrd]);
-echo $result;
-*/

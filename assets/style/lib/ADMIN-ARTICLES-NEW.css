@@ -1,0 +1,23 @@
+textarea {
+    resize: vertical;
+    max-height: 66vh;
+    min-height: 100px;
+    width: 80vw;
+    font-size: 16px;
+    font-family: "M-plus rounded", "Arial";
+}
+input {
+    font-size: 16px;
+}
+#title {
+    width: 50%;
+    font-size: 20px;
+    font-family: "M-plus rounded", "Arial";
+}
+#video {
+    width: 75vw;
+    font-family: "M-plus rounded", "Arial";
+}
+main {
+    font-family: "M-plus rounded", "Arial";
+}

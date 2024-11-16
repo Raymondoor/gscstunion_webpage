@@ -4,7 +4,7 @@ let dataArray = [];
 for (let i = 0; i < articleContainers.length; i++) {
     let data = {
         id: articleContainers[i].getAttribute('data-id'),
-        title: articleContainers[i].querySelector('.a-title a').textContent,
+        title: articleContainers[i].querySelector('.a-title').textContent,
         date: articleContainers[i].querySelector('.a-date').textContent,
         main: articleContainers[i].querySelector('.a-main p').textContent,
     };
