@@ -57,15 +57,14 @@ www.cc.aoyama.ac.jp
 re-structure
 /
 index.php
-phpinfo.php
 app/
 	api/
 		general/
-
 		form/
 	data/
 		SEO.json
 		database.db
+		schema.txt
 	templates/
 		header.php
 		footer.php
@@ -73,6 +72,11 @@ app/
 admin/
 	login.php
 	index.php
+	dev/
+		index.php
+		phpinfo.php
+	sns/
+		index.php
 articles/
 	index.php
 	page/

@@ -15,4 +15,4 @@ include_once (TEMPLATE_DIR . '/header.php');
 
 </main>
 <?php
-include_once (TEMPLATE_DIR . '/header.php');
+include_once (TEMPLATE_DIR . '/footer.php');

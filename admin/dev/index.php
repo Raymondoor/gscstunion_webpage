@@ -1,4 +1,4 @@
-<?php $title = '開発者用ページ';
+<?php $title = 'GSC学生連合 | 開発者用ページ';
 $file = 'ADMIN-DEV';
 $root = '../../';
 // Function
@@ -13,9 +13,17 @@ include_once (TEMPLATE_DIR . '/header.php');
 if (!$_SERVER['REMOTE_ADDR'] === $_SERVER['SERVER_ADDR']) {
     return_header(ROOT_LINK);
 }
+if (!isset($_SESSION['user'])) {
+    return_header(ROOT_LINK . '/admin/login.php?error=Please_Login_To_access_Admin_Page');
+}
 ?>
 <main>
-
+    <p>Username: <?= str_rot13($_SESSION['user']) ?></p>
+    <ul>
+        <li><a href="./phpinfo.php">phpinfo</a></li>
+        <li>$_SERVER↓<pre><?= print_r($_SERVER) ?></pre></li>
+        <li>$_SESSION↓<pre><?= print_r($_SESSION) ?></pre></li>
+    </ul>
 </main>
 <?php
-include_once (TEMPLATE_DIR . '/header.php');
+include_once (TEMPLATE_DIR . '/footer.php');
