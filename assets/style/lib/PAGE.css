@@ -1,0 +1,30 @@
+@import url("font/font.css");
+:root {
+  --frame: clamp(275px, 45vw, 45vw);;
+}
+main {
+  font-family: "M-plus rounded", "Arial";
+  max-width: clamp(280px, 60%, 60vw);
+  margin: 5px auto;
+}
+#videoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+iframe {
+  width: var(--frame);
+  height: calc(var(--frame) * 0.5625);
+  padding: 6px;
+  text-align: center;
+  box-sizing: border-box;
+}
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  font-size: 1rem;
+  font-family: "M-plus rounded", "Arial";
+}

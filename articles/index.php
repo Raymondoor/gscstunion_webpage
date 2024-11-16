@@ -33,7 +33,7 @@ include_once (TEMPLATE_DIR . '/header.php');
             </div>
         </div>
         <div id="article-table">            
-            
+            <?php // List articles ?>
         </div>
     </div>
 </main>

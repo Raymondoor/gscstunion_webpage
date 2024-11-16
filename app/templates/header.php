@@ -37,6 +37,8 @@ session_start();
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/HOME.css">
 <?php } elseif ($file == 'ARTICLES') { ?>
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ARTICLES.css">
+<?php } elseif ($file == 'PAGE') { ?>
+        <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/PAGE.css">
 <?php } elseif ($file == 'ADMIN-DEV') { ?>
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ADMIN-DEV.css">
 <?php } ?>
@@ -60,4 +62,4 @@ session_start();
         </div>
     </nav>
     <hr>
-</header>
+</header><?= PHP_EOL;

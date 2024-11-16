@@ -47,7 +47,6 @@ include_once (TEMPLATE_DIR . '/header.php');
         </div>
     </div>
 </main>
-
 <?php
 //footer
 include_once (TEMPLATE_DIR . '/footer.php');

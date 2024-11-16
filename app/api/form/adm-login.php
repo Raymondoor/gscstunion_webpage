@@ -3,6 +3,7 @@ require_once (__DIR__ . '/../general/DIR.php');
 require_once (API_DIR . '/general/DATABASE_PROCESS.php');
 require_once (API_DIR . '/general/HEADER.php');
 require_once (API_DIR . '/general/TEXT_FORMAT.php');
+require_once (API_DIR . '/general/LOG.php');
 
 session_start();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -20,6 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($result[0]['username'] === $username) {
             if (password_verify($password, $result[0]['password'])) {
                 $_SESSION['user'] = $username;
+                $log_data = date("Y-m-d H:i:s") . ', ' . $_SERVER['HTTP_SEC_CH_UA_PLATFORM'] . ', "' . $_SERVER['HTTP_USER_AGENT'] . '"';
+                generate_log('/login/login-', $log_data);
                 return_header('/admin');
             } else {
                 $_SESSION['loginerr'] = '*Wrong Password';

@@ -1,10 +1,11 @@
-<?php $title = 'GSC学生連合 | 管理者ページ';
-$file = 'ADMIN';
-$root = '../';
+<?php $title = '記事を削除する';
+$file = 'ADMIN-ARTICLES-DELETE';
+$root = '../../';
 // Function
 require_once (__DIR__ . '/' . $root . '/app/api/general/DIR.php');
 require_once (API_DIR . '/general/HEADER.php');
 require_once (API_DIR . '/general/LINK.php');
+require_once (API_DIR . '/general/TEXT_FORMAT.php');
 // modules
 require_once (API_DIR . '/brand.php');
 
@@ -18,12 +19,7 @@ if (!isset($_SESSION['user'])) {
 }
 ?>
 <main>
-    <ul>
-        <li><a href="articles/">新しい記事を書く</a></li>
-        <li><a href="articles/delete.php">記事を削除する</a></li>
-        <li><a href="sns/">SNSリンク管理</a></li>
-        <li><a href="dev/">ステータス</a></li>
-    </ul>
+    <form action="<?= FORM_URL . '/adm-delart.php' ?>" method="post"></form>
 </main>
 <?php
 include_once (TEMPLATE_DIR . '/footer.php');
