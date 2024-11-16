@@ -40,7 +40,7 @@ session_start();
 <?php } elseif ($file == 'ADMIN-DEV') { ?>
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ADMIN-DEV.css">
 <?php } ?>
-    <link rel="icon" href="<?= APP_URL . IMAGES_LINK; ?>/brand/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= APP_URL . IMAGES_LINK; ?>/brand/GSC_logo.png" type="image/x-icon">
     <link rel="preload" href="<?= APP_URL . FONT_LINK; ?>/NotoSerifJP-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="<?= APP_URL . FONT_LINK; ?>/MPLUSRounded1c-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 

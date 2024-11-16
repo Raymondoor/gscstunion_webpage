@@ -147,52 +147,6 @@ main {
           }
     }
 
-    /* articles/index.php */
-    #art-h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url(../image/main/campuspaint.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        margin: 0;
-        padding: 2%;
-
-        h2 {
-            text-align: center;
-            font-size: clamp(2.5rem, 4vw, 4rem);
-            margin: 0;
-            color: white;
-        }
-            
-    }
-    #sortContainer {
-        display: flex;
-
-    }
-
-    .sort {
-        padding: 2px;
-        margin: 0 10px;
-    }
-    select {
-        border: none;
-        outline: none;
-    }
-    .article-container {
-        font-family: "M-plus rounded", "Arial";
-
-        a {
-            color: hsl(180, 100%, 35%);
-            text-decoration: underline;
-        }
-    }
-    #article-main {
-        max-width: 90%;
-        margin: 5px auto;
-    }
-
     /* articles/page */
     #pa {
         max-width: 90%;
