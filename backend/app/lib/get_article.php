@@ -1,5 +1,5 @@
 <?php
-$databasePath = __DIR__ . "../../../data/database.db";
+$databasePath = __DIR__ . "/../../data/database.db";
 
 
 try {
