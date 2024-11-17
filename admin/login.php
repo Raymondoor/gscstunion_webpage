@@ -5,12 +5,13 @@ $root = '../';
 require_once (__DIR__ . '/' . $root . '/app/api/general/DIR.php');
 require_once (API_DIR . '/general/HEADER.php');
 require_once (API_DIR . '/general/LINK.php');
+require_once (API_DIR . '/general/CHECK_IP.php');
 // modules
 require_once (API_DIR . '/brand.php');
 
 // Header
 include_once (TEMPLATE_DIR . '/header.php');
-if (!$_SERVER['REMOTE_ADDR'] === $_SERVER['SERVER_ADDR']) {
+if (!ip_in_range($_SERVER['REMOTE_ADDR'], $allowed_network)) {
     return_header('/');
 }
 if (empty($_SESSION['csrf'])) {
@@ -37,4 +38,4 @@ if (empty($_SESSION['csrf'])) {
     </span>
 </main>
 <?php
-include_once (TEMPLATE_DIR . '/header.php');
+include_once (TEMPLATE_DIR . '/footer.php');

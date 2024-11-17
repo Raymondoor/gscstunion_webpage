@@ -29,22 +29,22 @@
     <div id="login">
 <?php if (isset($_SESSION['user']) && strpos($file, 'ADMIN') === false) { ?>
     <a href="<?= $root ?>admin/">管理者用ページ</a><?= PHP_EOL ?>
-<?php } elseif ($_SERVER['REMOTE_ADDR'] === $_SERVER['SERVER_ADDR'] && strpos($file, 'ADMIN') === false) { ?>
+<?php } elseif (ip_in_range($_SERVER['REMOTE_ADDR'], NETWORK_RANGE)) { ?>
     <a href="<?= $root ?>admin/login.php">管理者用ページにログイン</a><?= PHP_EOL ?>
 <?php } ?>
     </div>
 </footer>
-    <script src="<?= $root . SCRIPT_LINK; ?>/index.js"></script>
+    <script src="<?= APP_URL . SCRIPT_LINK; ?>/index.js"></script>
     <?php 
     // call a specific script for each directory or page
     function loadScript($file) {
         global $root;
         switch ($file) {
             case 'HOME':
-                echo '<script src="' . $root . SCRIPT_LINK . '/lib/HOME.js"></script>';
+                echo '<script src="' . APP_URL . SCRIPT_LINK . '/lib/HOME.js"></script>' . PHP_EOL;
                 break;
             case 'ARTICLES':
-                echo '<script src="' . $root . SCRIPT_LINK . '/lib/ARTICLES.js"></script>';
+                echo '<script src="' . APP_URL . SCRIPT_LINK . '/lib/ARTICLES.js"></script>' . PHP_EOL;
                 break;
             case 'ADMIN':
                 echo "";

@@ -1,4 +1,5 @@
 <?php
+require_once (__DIR__ . '/DIR.php');
 
 class DatabaseConnection {
 	private static $pdo = null;
@@ -29,14 +30,14 @@ class DatabaseStatement {
 		$this->pdo = DatabaseConnection::connect();
 		$stmt = $this->pdo->prepare($this->statement);
 		
-		if (str_starts_with(trim($this->statement), 'SELECT')) {
+		if (strpos(trim($this->statement), 'SELECT') === 0) {
 			$stmt->execute($parameters);
 			return $stmt->fetchAll(PDO::FETCH_ASSOC);
 		} elseif (
-			str_starts_with(trim($this->statement), 'INSERT') || 
-			str_starts_with(trim($this->statement), 'UPDATE') || 
-			str_starts_with(trim($this->statement), 'DELETE') ||
-			str_starts_with(trim($this->statement), 'BEGIN')) {
+            strpos(trim($this->statement), 'INSERT') === 0 || 
+            strpos(trim($this->statement), 'UPDATE') === 0 || 
+            strpos(trim($this->statement), 'DELETE') === 0 ||
+            strpos(trim($this->statement), 'BEGIN') === 0) {
 			return $stmt->execute($parameters);
 		} else {
 			throw new Exception("Unsupported query Type.");

@@ -2,7 +2,7 @@
 require_once (__DIR__ . '/HEADER.php');
 // LINK
 // root
-define('ROOT_LINK', ''); // add '/' in front if (!$_SERVER['SERVER_NAME'] == ROOT)
+define('ROOT_LINK', '/~gscstunion'); // add '/' in front if (!$_SERVER['SERVER_NAME'] == ROOT)
 // articles
 define('ARTICLES_LINK',  '/articles');
 // assets
@@ -15,3 +15,5 @@ define('FONT_LINK', STYLE_LINK . '/font');
 // root
 define('APP_URL', request_protocol() . $_SERVER['SERVER_NAME'] . ROOT_LINK);
 define('FORM_URL', APP_URL . '/app/api/form');
+// NETWORK
+define('NETWORK_RANGE', '133.2.0.0/16'); // modify
