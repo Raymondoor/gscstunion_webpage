@@ -1,5 +1,8 @@
 <?php
 function ip_in_range($ip, $range) {
+    if ($ip === '::1') {
+        return $ip;
+    }
     list($network, $mask) = explode('/', $range);
     $ip_long = ip2long($ip);
     $network_long = ip2long($network);

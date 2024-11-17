@@ -29,7 +29,7 @@
     <div id="login">
 <?php if (isset($_SESSION['user']) && strpos($file, 'ADMIN') === false) { ?>
     <a href="<?= $root ?>admin/">管理者用ページ</a><?= PHP_EOL ?>
-<?php } elseif (ip_in_range($_SERVER['REMOTE_ADDR'], NETWORK_RANGE)) { ?>
+<?php } elseif (ip_in_range($_SERVER['REMOTE_ADDR'], NETWORK_RANGE) && strpos($file, 'ADMIN') === false) { ?>
     <a href="<?= $root ?>admin/login.php">管理者用ページにログイン</a><?= PHP_EOL ?>
 <?php } ?>
     </div>

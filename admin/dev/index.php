@@ -11,14 +11,12 @@ require_once (API_DIR . '/brand.php');
 
 // Header
 include_once (TEMPLATE_DIR . '/header.php');
-/*
-if (!$_SERVER['REMOTE_ADDR'] === $_SERVER['SERVER_ADDR']) {
+if (!ip_in_range($_SERVER['REMOTE_ADDR'], NETWORK_RANGE)) {
     return_header('/');
 }
 if (!isset($_SESSION['user'])) {
     return_header('/admin/login.php?error=Please_Login_To_access_Admin_Page');
 }
-    */
 ?>
 <main>
     <p>Username: <?= str_rot13($_SESSION['user']) ?></p>

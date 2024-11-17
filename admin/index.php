@@ -11,7 +11,7 @@ require_once (API_DIR . '/brand.php');
 
 // Header
 include_once (TEMPLATE_DIR . '/header.php');
-if (!ip_in_range($_SERVER['REMOTE_ADDR'], $allowed_network)) {
+if (!ip_in_range($_SERVER['REMOTE_ADDR'], NETWORK_RANGE)) {
     return_header('/');
 }
 if (!isset($_SESSION['user'])) {
