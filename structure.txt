@@ -1,60 +1,4 @@
-www.cc.aoyama.ac.jp
-	/gscstunion
-		.htaccess
-		index.php
-		/admin
-			.htaccess
-			login.php
-			index.php
-		/articles
-			index.php
-		/api
-			login_bridge.php
-		/assets
-			/css
-				style.css
-			/js
-				index.js
-				/lib
-					sort-artticle.js
-			/images
-				campuspaint.jpg
-				chapel.jpg
-				uparrow.png
-				/icon
-					favicon.ico
-					GSC_logo.png
-					GSCstunionlogo.jpg
-					Instagram.png
-					WInstagram.png
-					WX.png
-					X.png
-			/fonts
-
-		/backend
-			.htaccess
-			/app
-				/config
-					init.php
-					databasedir.php
-					homedir.php
-				/lib
-					init.php
-					add_article.php
-					get_article.php
-					list_article.php
-					login_handle.php
-					password_hash.php
-					session_time.php
-					snslinks.php
-				/views
-					header.php
-					footer.php
-			/data
-				database.db
-
----
-re-structure
+www.cc.aoyama.ac.jp/~gscstunion/
 /
 index.php
 app/
@@ -65,14 +9,24 @@ app/
 		SEO.json
 		database.db
 		schema.txt
+		archive/
+			#id.php
+		log/
+			login/
+			article/
 	templates/
 		header.php
 		footer.php
 		index.php
+		page.php
 admin/
 	login.php
 	index.php
+	articles/
+		index.php
+		delete.php
 	dev/
+		dev.php
 		index.php
 		phpinfo.php
 	sns/
@@ -80,23 +34,23 @@ admin/
 articles/
 	index.php
 	page/
-		id.php
-assets/ 1
-	image/ 1
-		brand/ 1
-		main/ 1
-		share/ 1
-	script/ 1
+		#id.php
+assets/
+	image/
+		brand/
+		main/
+		share/
+	script/
 		script.js
-		lib/ 1
+		lib/
 			#dir.js
-	style/ 1
+	style/
 		style.css
-		var/ 1
+		var/
 			var.css
-		font/ 1
+		font/
 		lib/
 			#dir.css
-		template/ 1
+		template/
 			header.css
 			footer.css
