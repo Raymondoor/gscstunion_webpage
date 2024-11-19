@@ -9,4 +9,4 @@ SNSアカウント　随時更新しています！
 * [Instagram](https://instagram.com/gscstunion)
 * [X(Twitter)](https://x.com/GSCstunion)
 
-<img src="https://github.com/Raymondoor/gscstunion_webpage/blob/main/assets/image/brand/GSC_logo.png?raw=true" height="240">
+<!-- <img src="https://github.com/Raymondoor/gscstunion_webpage/blob/main/assets/image/brand/GSC_logo.png?raw=true" height="240"> -->
