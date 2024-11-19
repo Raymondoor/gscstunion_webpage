@@ -25,9 +25,9 @@ class New_article {
             ':video' => $this->video,
         ]);
         if ($result) {
-            $log_data = date("Y-m-d H:i:s") . ', NEW, "' . $this->title . '"';
-            generate_log('/article/article-', $log_data);
             if ($this->newid = $query->lastInsertId()) {
+                $log_data = date("Y-m-d H:i:s") . ', NEW, "' . $this->title . '"';
+                generate_log('/article/article-', $log_data);
                 return $this->MakeFile();
             }
         }
@@ -43,11 +43,20 @@ class New_article {
         if(!is_dir(ARTICLES_DIR . '/page')) {
             mkdir(ARTICLES_DIR . '/page', 0755);
         }
+        if(!is_dir(DATA_DIR . '/archive')) {
+            mkdir(DATA_DIR . '/archive', 0755);
+        }
         $filename = ARTICLES_DIR . '/page/' . $this->newid . '.php';
         $file = fopen($filename, 'w');
         fwrite($file, $page);
         fclose($file);
         chmod($filename, 0755);
+
+        $archive = DATA_DIR . '/archive/' . $this->newid . '.php';
+        $arch = fopen($archive, 'w');
+        fwrite($arch, $page);
+        fclose($arch);
+        chmod($archive, 0755);
         return $this->newid;
     }
 }

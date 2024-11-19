@@ -9,9 +9,9 @@ session_start();
     <!-- Primary tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<?php if(strpos($file, 'ADMIN') === false) { ?>
     <meta name="keywords" content="<?= $SEO['Keywords'] ?>" />
     <meta name="description" content="<?= $SEO['Description'] ?>" />
-<?php if(strpos($file, 'ADMIN') === false) { ?>
     <!-- Open graph / Facebook -->
     <meta property="og:title" content="<?= $title; ?>">
     <meta property="og:description" content="<?= $SEO['Description'] ?>">
@@ -41,6 +41,8 @@ session_start();
         <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/PAGE.css">
 <?php } elseif ($file == 'ADMIN-ARTICLES-NEW') { ?>
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ADMIN-ARTICLES-NEW.css">
+<?php } elseif ($file == 'ADMIN-ARTICLES-DELETE') { ?>
+    <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ADMIN-ARTICLES-DELETE.css">
 <?php } elseif ($file == 'ADMIN-DEV') { ?>
     <link rel="stylesheet" href="<?= APP_URL . STYLE_LINK; ?>/lib/ADMIN-DEV.css">
 <?php } ?>

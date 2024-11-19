@@ -49,8 +49,8 @@
             case 'ADMIN':
                 echo "";
                 break;
-            case 'login':
-                echo "";
+            case 'ADMIN-ARTICLES-DELETE':
+                echo '<script src="' . APP_URL . SCRIPT_LINK . '/lib/ADMIN-ARTICLES-DELETE.js"></script>' . PHP_EOL;
                 break;
         }
     }

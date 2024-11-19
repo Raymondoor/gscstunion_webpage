@@ -1,6 +1,6 @@
 <?php
 function ip_in_range($ip, $range) {
-    if ($ip === '::1') {
+    if ($ip === '::1' || $ip === '127.0.0.1') {
         return $ip;
     }
     list($network, $mask) = explode('/', $range);
