@@ -19,6 +19,7 @@
             <?= date("Y"); ?> &#169 All rights reserved
         </div>
         <div id="f-sns-link">
+        <a href="https://github.com/Raymondoor/gscstunion_webpage" target="_blank" title="GitHub Repo"><img src="<?= $root . IMAGES_LINK; ?>/share/github-mark.png" alt="GitHub Repo" class="sns_image"></a>
             <a href="<?= $SEO['SNS']['IG']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['IG']['Title'] ?>"><img src="<?= $root . IMAGES_LINK; ?>/share/Instagram.png" alt="<?= $SEO['SNS']['IG']['Title'] ?>" class="sns_image"></a>
             <a href="<?= $SEO['SNS']['X']['Link'] ?>" target="_blank" title="<?= $SEO['SNS']['X']['Title'] ?>"><img src="<?= $root . IMAGES_LINK; ?>/share/X.png" alt="<?= $SEO['SNS']['X']['Title'] ?>" class="sns_image"></a>
         </div>
