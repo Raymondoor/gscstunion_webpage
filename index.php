@@ -15,7 +15,7 @@ include_once (TEMPLATE_DIR . '/header.php');
 ?>
 <main>
     <div id="home-banner">
-        <h2>GSC Stunion</h2>
+        <h2>GSC 学生連合</h2>
         <h3><ruby>地球社会共生学部学生連合<rt>ちきゅうしゃかいきょうせいがくぶがくせいれんごう</rt><rp>ちきゅうしゃかいきょうせいがくぶがくせいれんごう</rp></ruby></h3>
         <h4>青山学院大学</h4>
     </div>
@@ -28,7 +28,7 @@ include_once (TEMPLATE_DIR . '/header.php');
                 盛んな学部生交流の機会や、学生主体の学びを提供するイベント企画を通し、学部が目指す「より良い地球社会創出」の一翼を担います。</p>
         </div>
     </div>
-    <hr>
+    <hr id="rainbow">
     <div id="socialpage">
         <div id="socialpagenav">
             <div class="spn-container">

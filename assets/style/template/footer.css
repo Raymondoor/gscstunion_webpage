@@ -1,6 +1,14 @@
 footer {
     background-color: rgb(220, 220, 220);
     font-size: small;
+    font-family: "M-plus rounded", "Arial";
+
+    #footer-head {
+        background: linear-gradient(to right, #479e88, #65ddbf, #479e88);
+        height: 2px;
+        border: none;
+        margin: 0;
+    }
 
     #f-links {
         display: flex;

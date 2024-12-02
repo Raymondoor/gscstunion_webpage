@@ -13,3 +13,8 @@
     src: url("NotoSerifJP-Regular.woff2");
     font-display: swap;
 }
+@font-face {
+    font-family: "Yumin-cho";
+    src: url("yumin.woff2");
+    font-display: swap;
+}

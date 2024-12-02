@@ -1,0 +1,12 @@
+#rainbow {
+    /* background: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073); */
+    background-color: grey;
+    height: 2px;
+    border: none;
+}
+main {
+    font-family: "M-plus rounded", "Arial";
+}
+#home-banner {
+    font-family: "Noto Serif", "M-plus rounded bold", "Arial";
+}

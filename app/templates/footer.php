@@ -1,4 +1,5 @@
 <footer>
+    <hr id="footer-head">
     <div id="f-links">
         <div id="f-main-link">
             <p><a href="https://www.aoyama.ac.jp/faculty/gsc/">地球社会共生学部&#8663</a></p><br>
