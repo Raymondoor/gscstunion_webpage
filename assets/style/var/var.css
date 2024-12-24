@@ -1,5 +1,16 @@
 :root {
-    --MainColor: #479e88;
+    
     --BrightColor: #65ddbf;
     --Logo: url(../../image/icon/GSC_logo_512.png);
+}
+/* Base Colour. */
+@property --MainColor {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #479e88;
+}
+@property --Rainbow {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: linear-gradient(to right,#c70000,#d28300,#dfd000,#00873c,#005aa0,#181878,#800073);;
 }

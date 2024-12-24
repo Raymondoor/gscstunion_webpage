@@ -7,13 +7,22 @@ app/
 		form/
 	data/
 		SEO.json
+		SNS.json
+		timeline.json
+
 		database.db
 		schema.txt
 		archive/
-			#id.php
+			#id.md
 		log/
 			login/
+				login-yyyy-mm.csv
 			article/
+				article-yyyy-mm.csv
+			timeline/
+				timeline-yyyy-mm.csv
+			gallery/
+				gallery-yyyy-mm.csv
 	templates/
 		header.php
 		footer.php
@@ -25,16 +34,40 @@ admin/
 	articles/
 		index.php
 		delete.php
+	projects/
+		index.php
+	timeline/
+		index.php
+		delete.php
 	dev/
 		dev.php
 		index.php
 		phpinfo.php
 	sns/
 		index.php
+navigation/
+	index.php
 articles/
 	index.php
 	page/
 		#id.php
+projects/
+
+timeline/
+	index.php
+gallery/
+	index.php
+aboutus/
+	index.php
+	social/
+		index.php
+	links/
+		index.php
+	info/
+		location/
+		policy/
+		license/
+		contant/
 assets/
 	image/
 		brand/
@@ -47,7 +80,7 @@ assets/
 	style/
 		style.css
 		var/
-			var.css
+			colour.css
 		font/
 		lib/
 			#dir.css

@@ -14,7 +14,7 @@ include_once (TEMPLATE_DIR . '/header.php');
 
 ?>
 <main>
-    <div id="home-banner">
+    <div id="home-banner" style="background-image: url(<?= APP_URL . IMAGES_LINK; ?>/main/chapel.jpg);">
         <h2>GSC 学生連合</h2>
         <h3><ruby>地球社会共生学部学生連合<rt>ちきゅうしゃかいきょうせいがくぶがくせいれんごう</rt><rp>ちきゅうしゃかいきょうせいがくぶがくせいれんごう</rp></ruby></h3>
         <h4>青山学院大学</h4>

@@ -1,6 +1,7 @@
 @import url("font/font.css");
 @import url("template/header.css");
 @import url("template/footer.css");
+@import url("var/var.css");
 html {
     scroll-behavior: smooth;
 }
@@ -26,126 +27,6 @@ main {
 
     /* ./index.php */
 
-    #home-banner {
-        text-align: center;
-        color: white;
-        background-image: url(../image/main/chapel.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        padding: 20px 0;
-        h2 {
-            text-align: center;
-            font-size: clamp(2.5rem, 4vw, 4rem);
-            margin: 0;
-            color: white;
-        }
-
-        h3 {
-            letter-spacing: 4px;
-            font-size: clamp(0.8rem, 1.5vw, 2rem);
-        }
-        h4 {
-            letter-spacing: 1px;
-            font-size: clamp(0.75rem, 1.2vw, 1.8rem);
-        }
-    }
-    #aboutus {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 50px 0;
-
-        #slogan {
-            
-            color: hsl(0, 0%, 60%);
-            text-shadow: 1px 1px 2px hsla(0, 0%, 40%, 0.25);
-            width: min(500px, 35%);
-            padding-left: 1.5vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            white-space: nowrap;
-            font-size: clamp(0.9rem, 2.75vw, 2.2rem);
-            font-family: "Noto Serif", "M-plus rounded bold", "Arial";
-        }
-        #au-description {
-            
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.2rem;
-            line-height: 1.8;
-            width: min(700px, 45%);
-            font-size: clamp(0.66rem, 1.33vw, 1rem);
-            font-family: "M-plus rounded", "Arial";
-        }
-        
-    }
-    hr {
-        margin: 20px 2em;
-        border: 1px solid hsl(0, 0%, 50%);
-        
-    }
-    #socialpage {
-        margin: 0;
-        background-color: #479e88;
-        color: white;
-        text-align: center;
-        ::selection {
-            background-color: hsl(33, 100%, 88%);
-            color: hsl(0, 0%, 50%);
-        }
-
-        #socialpagenav {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            list-style-type: none;
-            .spn-container {
-                padding: 10px;
-                margin: 10px 0;
-
-            }
-                a {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    text-decoration: none;
-                    color: white;
-                    font-family: Arial, Helvetica, sans-serif;
-                    font-weight: lighter;
-                }
-            
-                .socialpagelogo {
-                    height: 20px;
-                    padding: 0 8px;
-                    
-                }
-        }
-
-        #hdescription {
-            color: hsl(0, 0%, 100%);
-            /* text-decoration: underline; */
-            padding: 50px 5px;
-            width:clamp(80%, 100%, 50%);
-            margin: auto;
-            font-size: clamp(0.7rem, 1.0vw, 1rem);
-            text-align: left;
-            letter-spacing: 1px;
-            opacity: 0;
-            a {
-                text-decoration: none;
-                color: hsl(180, 100%, 50%);
-            }
-            h4 {
-                margin: 0;
-                padding: 0;
-            }
-              
-        }
-        .start-animation {
-            animation: fallIn 1.5s ease-out forwards;
-          }
-    }
 
     /* articles/page */
     #pa {

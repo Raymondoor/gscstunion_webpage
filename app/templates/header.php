@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');
+header('Content-Type: text/html; charset=utf-8; Content-Security-Policy: script-src "self"');
 $SEO = list_seo();
 session_start();
 ?>
