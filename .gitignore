@@ -1,4 +1,2 @@
-/app/data/*
-/articles/page*
-/.htaccess
-/.ftpaccess
+# app/data
+/equipment

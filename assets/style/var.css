@@ -1,0 +1,29 @@
+:root{
+    --BaseFont: 'Zen Maru';
+    --AltFont: 'Zen Kaku';
+}
+@property --MainColour{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #479e88;
+}
+@property --SubColour{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #65ddbf;
+}
+@property --SubColour2{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #306b5c;
+}
+@property --OrgColour{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #01a402;
+}
+@property --BackTone{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(0, 0%, 90%);
+}

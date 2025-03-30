@@ -1,0 +1,62 @@
+CREATE TABLE user (
+    id       INTEGER NOT NULL
+                     PRIMARY KEY,
+    username TEXT    NOT NULL,
+    password TEXT    NOT NULL
+);
+CREATE TABLE project (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT
+                         NOT NULL
+                         UNIQUE,
+    pName        TEXT    UNIQUE
+                         NOT NULL,
+    pEngName     TEXT    UNIQUE
+                         NOT NULL,
+    pDescription TEXT    NOT NULL,
+    pColour      TEXT    UNIQUE
+                         NOT NULL,
+    pThumbnail   TEXT    UNIQUE
+                         NOT NULL,
+    pDirName     TEXT    NOT NULL
+                         UNIQUE,
+    pIsActive    INTEGER NOT NULL
+                         DEFAULT (1),
+    pOrder       INTEGER
+);
+CREATE TABLE hashtag (
+    id    INTEGER PRIMARY KEY AUTOINCREMENT
+                  UNIQUE
+                  NOT NULL,
+    hName TEXT    UNIQUE
+                  NOT NULL
+);
+CREATE TABLE article (
+    id        INTEGER PRIMARY KEY AUTOINCREMENT
+                      UNIQUE
+                      NOT NULL,
+    date      TEXT    NOT NULL,
+    title     TEXT    NOT NULL,
+    main      TEXT    NOT NULL,
+    thumbnail TEXT    NOT NULL
+                      UNIQUE,
+    projectid INTEGER NOT NULL
+                      REFERENCES project (id),
+    hashtagid INTEGER REFERENCES hashtag (id) 
+);
+CREATE TABLE timeline (
+    id      INTEGER PRIMARY KEY AUTOINCREMENT
+                    NOT NULL
+                    UNIQUE,
+    author  TEXT    NOT NULL,
+    message TEXT    NOT NULL,
+    date    TEXT    NOT NULL
+);
+CREATE TRIGGER set_default_order
+         AFTER INSERT
+            ON project
+      FOR EACH ROW
+BEGIN
+    UPDATE project
+       SET pOrder = NEW.id
+     WHERE id = NEW.id;
+END;

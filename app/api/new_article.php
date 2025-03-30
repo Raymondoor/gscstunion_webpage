@@ -1,62 +1,47 @@
-<?php
-require_once (__DIR__ . '/general/DIR.php');
-require_once (API_DIR . '/general/DATABASE_PROCESS.php');
-require_once (API_DIR . '/general/LOG.php');
-require_once (API_DIR . '/general/TEXT_FORMAT.php');
+<?php require_once(__DIR__.'/general/DIR.php');
+require_once(API_DIR.'/general/DATABASE_PROCESS.php');
+require_once(API_DIR.'/general/LOG.php');
+require_once(API_DIR.'/general/FORMAT_TEXT.php');
 
-class New_article {
-    private $title;
-    private $date;
-    private $main;
-    private $video;
-    private $newid;
-    public function __construct ($title, $date, $main, $video) {
+class New_Article{
+    private $title; private $date; private $main; private $thumbnail; private $projectid; private $hid; private $newid;
+
+    public function __construct($title, $date, $main, $thumbnail, $projectid, $hid){
         $this->title = $title;
         $this->date = $date;
         $this->main = $main;
-        $this->video = $video;
+        $this->thumbnail = $thumbnail;
+        $this->projectid = $projectid;
+        $this->hid = $hid;
     }
-    public function InsertDB () {
-        $query = new DatabaseStatement("INSERT INTO article (title, date, main, video) VALUES (:title, :date, :main, :video)");
+    public function InsertDB(){
+        $query = new DatabaseStatement("INSERT INTO article (title, date, main, thumbnail, projectid, hashtagid) VALUES (:title, :date, :main, :thumbnail, :projectid, :hashtagid)");
         $result = $query->Operation([
             ':title' => $this->title,
             ':date' => $this->date,
             ':main' => $this->main,
-            ':video' => $this->video,
+            ':thumbnail' => $this->thumbnail,
+            ':projectid' => $this->projectid,
+            ':hashtagid' => $this->hid
         ]);
-        if ($result) {
-            if ($this->newid = $query->lastInsertId()) {
-                $log_data = date("Y-m-d H:i:s") . ', NEW, "' . $this->title . '"';
-                generate_log('/article/article-', $log_data);
-                return $this->MakeFile();
-            }
+        if($result){
+            $this->newid = $query->lastInsertId();
+            $log_data = date("Y-m-d H:i:s").', NEW, '.$this->projectid.', "'.$this->title.'"';
+            generate_log('/article/article-', $log_data);
+            return $this->MakeFile();
         }
     }
-
-    public function MakeFile () {
-        $page = file_get_contents(TEMPLATE_DIR . '/page.php');
-        $page = str_replace('obTITLE', $this->title, $page);
-        $page = str_replace('obDATE', $this->date, $page);
-        $page = str_replace('obMAIN', attach_link($this->main), $page);
-        $page = str_replace('obVIDEO', remove_style($this->video), $page);
-
-        if(!is_dir(ARTICLES_DIR . '/page')) {
-            mkdir(ARTICLES_DIR . '/page', 0755);
+    public function MakeFile(){
+        $page = file_get_contents(TEMPLATE_DIR.'/article.php');
+        $page = str_replace('obID', $this->newid, $page);
+        if(!is_dir(ARTICLES_DIR.'/page/')){
+            mkdir(ARTICLES_DIR.'/page/', 0755);
         }
-        if(!is_dir(DATA_DIR . '/archive')) {
-            mkdir(DATA_DIR . '/archive', 0755);
-        }
-        $filename = ARTICLES_DIR . '/page/' . $this->newid . '.php';
+        $filename = ARTICLES_DIR.'/page/'.$this->newid.'.php';
         $file = fopen($filename, 'w');
         fwrite($file, $page);
         fclose($file);
         chmod($filename, 0755);
-
-        $archive = DATA_DIR . '/archive/' . $this->newid . '.php';
-        $arch = fopen($archive, 'w');
-        fwrite($arch, $page);
-        fclose($arch);
-        chmod($archive, 0755);
         return $this->newid;
     }
 }

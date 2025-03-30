@@ -1,0 +1,68 @@
+.optionField {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2px;
+    width: 20rem;
+    font-family: var(--BaseFont);
+}
+.optionField:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+#match {
+    margin-top: 0px;
+}
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: var(--BaseFont);
+}
+input {
+    font-size: 16px;
+    border-radius: 0;
+    font-family: var(--BaseFont);
+}
+option{
+    font-size: 16px;
+    font-family: var(--BaseFont);
+}
+select {
+    font-size: 16px;
+}
+#editor{
+    min-height: 20rem;
+    font-size: 1rem;
+    font-family: var(--BaseFont);
+    .ql-container{
+        height: auto;
+        min-height: 10rem;
+    }
+    .ql-editor{
+        height: auto !important;
+        overflow-y: visible !important;
+        padding: 12px 15px;
+        img {
+            max-width: 40vw;
+            max-height: 30vh;
+        }
+        iframe{
+            width: 40vw;
+            height: calc(40vw * 0.5625);
+        }
+    }
+}
+.ql-youtube {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ql-youtube img {
+    vertical-align: middle;
+  }
+#sumitbtn{
+    margin: 0 0rem 1rem 0rem;
+    padding: 0.25rem;
+    background-color: var(--MainColour);
+    color: white;
+}

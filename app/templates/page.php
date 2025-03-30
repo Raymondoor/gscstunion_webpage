@@ -1,28 +1,18 @@
-<?php $title = 'obTITLE';
-$file = 'PAGE';
-$root = '../../';
-// Function
-require_once (__DIR__ . '/' . $root . '/app/api/general/DIR.php');
-require_once (API_DIR . '/general/HEADER.php');
-require_once (API_DIR . '/general/LINK.php');
-require_once (API_DIR . '/general/CHECK_IP.php');
-// modules
-require_once (API_DIR . '/brand.php');
-
-// Header
-include_once (TEMPLATE_DIR . '/header.php');
-?>
-<main>
-    <h2>obTITLE</h2>
-    <p><i>obDATE</i></p>
-    <p>
-<pre>
-obMAIN
-</pre>
-    </p>
-    <div id="videoContainer">
-        obVIDEO
+<div id="articleContainer">
+    <div class="thumbnail" style="background-image: url(<?=IMAGES_URL.'/main/articles/thumbnail/'.$article['thumbnail']?>)"></div>
+    <div id="textContainer">
+        <h4 id="project"><a href="<?=PROJECTS_URL.'/'.$project['pDirName']?>/" style="color: #<?=$project['pColour']?>;"><?=$project['pName']?></a></h4>
+        <h1 id="title"><?=$article['title']?></h1>
+        <div id="info">
+            <div id="actualinfo">
+                <p id="date"><i><?=$article['date']?></i></p>
+                <p>#<?=$hashtag['hName']?></p>
+            </div>
+            <button id="clipboardButton" onclick="copyToClipboard(this)">URLをコピーする</button>
+        </div>
+        <hr>
+        <div id="content">
+        <?=URL_replace($article['main'])?>
+        </div>
     </div>
-</main>
-<?php
-include_once (TEMPLATE_DIR . '/footer.php');
+</div>

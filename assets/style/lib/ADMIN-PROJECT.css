@@ -1,0 +1,23 @@
+.project {
+    color: white;
+    border-radius: 20px ;
+    margin: 20px;
+    padding: 10px;
+    h2 {
+        margin: 10px;
+    }
+    a {
+        text-decoration: underline;
+        color: inherit;
+    }
+}
+.pImage {
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

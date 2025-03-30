@@ -1,10 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-    // When the user clicks on the button, scroll to the top of the document
-    document.getElementById('b2t').addEventListener('click', function() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        console.log('go to top')
+function dispNav(){
+    let disp = window.innerWidth <= 680 ? 'block' : 'flex';
+    const menuButton = document.getElementById('hb-menu');
+    const nav = document.getElementById('hb-nav');
+    nav.style.display = 'none';
+    menuButton.addEventListener('click', function(e){
+        nav.style.display = nav.style.display === disp ? 'none' : disp;
+        e.stopPropagation();
     });
-    
+    document.addEventListener('click', function(e) {
+        if (!menuButton.contains(e.target) && !nav.contains(e.target)){
+            nav.style.display = 'none';
+        }
+    });
+    window.addEventListener('resize', function(){
+        if(nav.style.display !== 'none'){
+            disp = window.innerWidth <= 680 ? 'block' : 'flex';
+            nav.style.display = disp;
+        }else{
+            disp = window.innerWidth <= 680 ? 'block' : 'flex';
+        }
+    })
+};
+document.addEventListener('DOMContentLoaded', function(){
+    dispNav();
 });

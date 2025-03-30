@@ -1,19 +1,16 @@
-<?php
-require_once (__DIR__ . '/HEADER.php');
-// LINK
-// root
-define('ROOT_LINK', ''); // add '/' in front if (!$_SERVER['SERVER_NAME'] == ROOT) /~gscstunion
-// articles
-define('ARTICLES_LINK',  '/articles');
-// assets
-define('ASSETS_LINK', '/assets');
-define('IMAGES_LINK', ASSETS_LINK . '/image');
-define('SCRIPT_LINK', ASSETS_LINK . '/script');
-define('STYLE_LINK', ASSETS_LINK . '/style');
-define('FONT_LINK', STYLE_LINK . '/font');
-// URL
-// root
-define('APP_URL', request_protocol() . $_SERVER['SERVER_NAME'] . ROOT_LINK);
-define('FORM_URL', APP_URL . '/app/api/form');
-// NETWORK
-define('NETWORK_RANGE', $_SERVER['REMOTE_ADDR']); // modify 133.2.0.0/16
+<?php require_once(__DIR__.'/HEADER.php');
+define('HOME_PATH',''); // if(!$_SERVER['SERVER_NAME'] == ROOT){'/' + dirname}
+define('APP_URL',request_protocol().$_SERVER['SERVER_NAME'].HOME_PATH);
+
+define('ARTICLES_URL',APP_URL.'/articles');
+define('PAGE_URL',ARTICLES_URL.'/page');
+define('PROJECTS_URL',APP_URL.'/projects');
+define('TIMELINE_URL',APP_URL.'/timeline');
+
+define('ASSETS_URL',APP_URL.'/assets');
+define('IMAGES_URL',ASSETS_URL.'/image');
+define('STYLE_URL',ASSETS_URL.'/style');
+define('SCRIPT_URL',ASSETS_URL.'/script');
+define('FONT_URL',STYLE_URL.'/font');
+
+define('FORM_URL',APP_URL.'/app/api/form');

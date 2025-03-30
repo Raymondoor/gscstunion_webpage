@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1080"
+   height="1080"
+   viewBox="0 0 174.19355 174.19355"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <ellipse
+       style="fill:#0aa60c;fill-opacity:1;stroke:none;stroke-width:1.41442;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       id="path1"
+       cx="27.092665"
+       cy="136.91437"
+       rx="25.452452"
+       ry="25.58131" />
+    <ellipse
+       style="fill:#0aa60c;fill-opacity:1;stroke:none;stroke-width:1.41442;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       id="ellipse2"
+       cx="147.10091"
+       cy="136.91437"
+       rx="25.452452"
+       ry="25.58131" />
+    <ellipse
+       style="fill:#0aa60c;fill-opacity:1;stroke:none;stroke-width:1.41442;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       id="ellipse3"
+       cx="87.096786"
+       cy="38.490036"
+       rx="25.452452"
+       ry="25.58131" />
+    <rect
+       style="fill:#0aa60c;fill-opacity:1;stroke:none;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       id="rect3"
+       width="108.08906"
+       height="1.3062065"
+       x="33.052254"
+       y="136.26126" />
+    <rect
+       style="fill:#0aa60c;fill-opacity:1;stroke:none;stroke-width:3.61161;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       id="rect4"
+       width="116.22952"
+       height="1.3392719"
+       x="84.361206"
+       y="-56.845753"
+       transform="matrix(0.50705473,0.86191386,-0.79848389,0.60201617,0,0)" />
+    <rect
+       style="fill:#0aa60c;fill-opacity:1;stroke:none;stroke-width:3.61161;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       id="rect5"
+       width="116.22953"
+       height="1.3392719"
+       x="-21.194412"
+       y="94.279503"
+       transform="matrix(-0.50705472,0.86191386,0.79848389,0.60201618,0,0)" />
+  </g>
+  <g
+     id="layer2">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.3548px;line-height:0px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0.121708px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       x="87.212532"
+       y="45.744041"
+       id="text5"><tspan
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.3548px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:3.43958"
+         x="87.273384"
+         y="45.744041">学生</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.3548px;line-height:0px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0.121708px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       x="147.21666"
+       y="144.16838"
+       id="text6"><tspan
+         id="tspan6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.3548px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:3.43958"
+         x="147.27751"
+         y="144.16838">職員</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.3548px;line-height:0px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0.121708px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:3.43958;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       x="27.319479"
+       y="143.79439"
+       id="text7"><tspan
+         id="tspan7"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.3548px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:3.43958"
+         x="27.380333"
+         y="143.79439">教授</tspan></text>
+  </g>
+</svg>

@@ -1,78 +1,66 @@
-footer {
-    background-color: rgb(220, 220, 220);
-    font-size: small;
-    font-family: "M-plus rounded", "Arial";
-
-    #footer-head {
-        background: linear-gradient(to right, #479e88, #65ddbf, #479e88);
-        height: 2px;
-        border: none;
+footer{
+    background-image: url(../../image/main/chapel-mono.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: var(--BaseFont);
+    color: white;
+    hr{
         margin: 0;
+        height: 2px;
+        background: linear-gradient(to right, var(--MainColour), var(--SubColour), var(--MainColour));
+        border: none;
     }
-
-    #f-links {
+    #f-main{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        .f-links{
+            margin-bottom: 1rem;
+            h3{
+                margin: 0;
+            }
+            h3::selection{
+                background: var(--SubColour);
+                color: var(--SubColour2);
+            }
+            ul{
+                margin: 0.5rem 0;
+                padding-left: 1.5rem;
+                a{
+                    color: inherit;
+                    text-decoration: underline;
+                    letter-spacing: 0.125rem;
+                    transition: all 240ms;
+                }
+                a:hover{
+                    color: var(--SubColour);
+                }a::selection{
+                    background: var(--SubColour);
+                    color: var(--SubColour2);
+                }
+            }
+        }
+    }
+    #f-bottom{
+        margin: 0.25rem 1rem;
         display: flex;
-        justify-content: space-around;
-        border-bottom: 1px solid black;
-        margin: 0 50px;
-        flex-wrap: wrap;
-
-        #f-main-link {
-            margin: 16px 0;
-
-            p {
+        justify-content: space-between;
+        align-items: center;
+        #f-cred{
+            align-content: center;
+            p{
                 margin: 0;
             }
         }
-    }
-    a {
-        color: inherit;
-        text-decoration: underline;
-    }
-    a:visited {
-        color: inherit;
-    }
-    a:hover {
-        color: hsl(180, 100%, 35%);
-    }
-
-    #fnavbar {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 20px;
-
-        #f-sns-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            .sns_image {
-                height: 20px;
-                padding: 10px 10px;
-                transition: all 200ms;
-            }
-            .sns_image:hover {
-                transform: scale(1.1);
-            }
+        #f-logo{
+            --size: 1.5rem;
+            height: var(--size);
+            width: var(--size);
+            background-image: url(../../image/brand/logo2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
     }
-
-    #back2top {
-        display: flex;
-        justify-content: center;
-
-        #b2t {
-            border: none;
-            outline: none;
-            background-color: rgba(0, 0, 0, 0);
-            cursor: pointer;
-            margin: 6px;
-
-            #b2timg {
-                height: 15px;
-            }
-        }
-    }
-
-
 }

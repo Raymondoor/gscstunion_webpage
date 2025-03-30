@@ -1,0 +1,44 @@
+@import url(../template/aboutnav.css);
+main{
+    display: flex;
+    justify-content: space-between;
+}
+@media(min-width: 1001px){
+    #htmlContainer{
+        width: calc(100% - 300px);
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        ul{
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+}
+@media(max-width: 1000px) and (min-width: 861px){
+    #htmlContainer{
+        width: calc(100% - 250px);
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        ul{
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+}
+@media(max-width: 860px){
+    #htmlContainer{
+        width: 100%;
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        ul{
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+}

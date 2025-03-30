@@ -1,0 +1,207 @@
+main{
+  color: white;
+  #dialogue{
+    display: flex;
+    align-items: center;
+    #pThumb{
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      --size: 25vw;
+      width: var(--size);
+      height: var(--size);
+      flex-shrink: 0;
+    }
+    #text{
+      align-content: center;
+      margin: 1rem;
+      width: clamp(50%, 100%, 1200px);
+      h1{
+        margin: 0;
+      }
+      h4{
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+      hr{
+        border-radius: 2px;
+      }
+    }
+  }
+  @media(max-width: 680px){
+    #dialogue{
+      display: grid;
+      #pThumb{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 33vw;
+        flex-shrink: 0;
+      }
+      #text{
+        align-content: center;
+        margin: 0.75rem;
+        width: fit-content;
+        h1{
+          margin: 0;
+          font-size: 1.75rem;
+        }
+        h4{
+          margin: 0;
+          margin-bottom: 0.75rem;
+        }
+        hr{
+          border-radius: 2px;
+        }
+        p{
+          margin: 0.75rem 0;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+  #articles{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 1.5rem;
+    h2{
+      text-align: center;
+      margin: 0;
+      padding: 1.5rem;
+    }
+    #articlesContainer{
+      padding: 1.5rem;
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 1rem;
+      .article{
+        a{
+          display: flex;
+          flex-direction: row;
+          color: white;
+          text-decoration: none;
+          transition: box-shadow 0.2s ease;
+          .aImage{
+            flex-shrink: 0;
+            --size: 10rem;
+            height: var(--size);
+            width: var(--size);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            transition: box-shadow 0.2s ease;
+          }
+          .aText{
+            /*transform: translateX(-3rem);*/
+            h3{
+              margin: 0.5rem 0;
+              margin-left: 0.25rem;
+              transition: text-shadow 0.2s ease;
+            }
+            p{
+              margin: 0.5rem 0;
+              margin-left: 0.25rem;
+              transition: text-shadow 0.2s ease;
+            }
+          }
+        }
+        a:hover{
+          filter: contrast(150%);
+          filter: saturate(150%);
+          box-shadow: 1px 1px hsla(0, 0%, 30%, 0.5);
+          .aImage{
+            box-shadow: 2px 0 hsl(0, 0%, 20%);
+          }
+          h3{
+              text-shadow: 2px 2px hsl(0, 0%, 20%);
+          }
+          p{
+              text-shadow: 2px 2px hsl(0, 0%, 20%);
+          }
+        }
+      }
+    }
+    @media(max-width: 680px){
+      #articlesContainer{
+        padding: 0.5rem 0;
+        width: 98%;
+        max-width: 98%;
+        border-radius: 0;
+        margin: 0 auto;
+        .article{
+          a{
+            display: flex;
+            flex-direction: row;
+            color: white;
+            text-decoration: none;
+            .aImage{
+              flex-shrink: 0;
+              --size: 8rem;
+              height: var(--size);
+              width: var(--size);
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+            }
+            .aText{
+              padding-right: 0.25rem;
+              h3{
+                font-size: 1rem;
+                margin: 0.5rem 0;
+                margin-left: 0.25rem;
+              }
+              p{
+                margin: 0.5rem 0;
+                margin-left: 0.25rem;
+              }
+              .mainBits{
+                display: none;
+              }
+            }
+          }
+        }
+        @media(max-width: 400px){
+          .article{
+            --height: 10rem;
+            height: var(--height);
+            a{
+              height: var(--height);
+              color: white;
+              text-decoration: none;
+              .aImage{
+                position: absolute;
+                height: var(--height);
+                width: 98%;
+                max-width: 98vw;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                z-index: 0;
+              }
+              .aText{
+                padding: 0 0.75rem;
+                z-index: 1;
+                width: 98%;
+                align-content: center;
+                h3{
+                  width: inherit;
+                  font-size: 1rem;
+                  margin: 0.5rem 0;
+                }
+                p{
+                  margin: 0.5rem 0;
+                }
+                .mainBits{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

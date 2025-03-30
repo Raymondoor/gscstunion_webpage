@@ -1,0 +1,39 @@
+#login-form{
+    min-width: 280px;
+    width: 80%;
+    max-width: 600px;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    background: white;
+    border-top: solid 5px var(--MainColour);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    letter-spacing: 0rem;
+    form{
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        input{
+            border: none;
+            border-left: 2px solid var(--SubColour);
+            border-right: 2px solid var(--SubColour);
+            border-radius: 0.125rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+            font-family: var(--BaseFont);
+            padding: 0.25rem;
+            margin: 0.25rem;
+        }
+        input[type="submit"]:focus{
+            background-color: lightgray;
+        }
+        input:focus{
+            outline: none;
+            background-color: hsl(0, 0%, 98%);
+            border-left: 2px solid var(--OrgColour);
+            border-right: 2px solid var(--OrgColour);
+            color: var(--SubColour2);
+        }
+    }
+    h2{
+        margin: 0.5rem 0;
+    }
+}

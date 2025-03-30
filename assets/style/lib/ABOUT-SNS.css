@@ -1,0 +1,134 @@
+@import url(../template/aboutnav.css);
+main{
+    display: flex;
+    justify-content: space-between;
+}
+@media(min-width: 1001px){
+    #htmlContainer{
+        width: calc(100% - 300px);
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        .account{
+            --size: 5rem;
+            width: var(--size);
+            margin: 0 auto;
+            padding: 0.5rem;
+            a{
+                margin: 0 auto;
+                display: block;
+                color: black;
+                text-decoration: none;
+                transition: all 240ms;
+                p{
+                    width: fit-content;
+                    margin: 0.5rem auto;
+                }
+                .image{
+                    height: var(--size);
+                    width: var(--size);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    transition: all 240ms;
+                }
+            }
+            a:hover{
+                text-shadow: 2px 2px hsl(0, 0%, 60%);
+                .image{
+                    filter: drop-shadow(2px 2px hsl(0, 0%, 60%));
+                }
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+@media(max-width: 1000px) and (min-width: 861px){
+    #htmlContainer{
+        width: calc(100% - 250px);
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        .account{
+            --size: 5rem;
+            width: var(--size);
+            margin: 0 auto;
+            padding: 0.5rem;
+            a{
+                margin: 0 auto;
+                display: block;
+                color: black;
+                text-decoration: none;
+                transition: all 240ms;
+                p{
+                    width: fit-content;
+                    margin: 0.5rem auto;
+                }
+                .image{
+                    height: var(--size);
+                    width: var(--size);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    transition: all 240ms;
+                }
+            }
+            a:hover{
+                text-shadow: 2px 2px hsl(0, 0%, 60%);
+                .image{
+                    filter: drop-shadow(2px 2px hsl(0, 0%, 60%));
+                }
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+@media(max-width: 860px){
+    #htmlContainer{
+        width: 100%;
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        .account{
+            --size: 5rem;
+            width: var(--size);
+            margin: 0 auto;
+            padding: 0.5rem;
+            a{
+                margin: 0 auto;
+                display: block;
+                color: black;
+                text-decoration: none;
+                transition: all 240ms;
+                p{
+                    width: fit-content;
+                    margin: 0.5rem auto;
+                }
+                .image{
+                    height: var(--size);
+                    width: var(--size);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    transition: all 240ms;
+                }
+            }
+            a:hover{
+                text-shadow: 2px 2px hsl(0, 0%, 60%);
+                .image{
+                    filter: drop-shadow(2px 2px hsl(0, 0%, 60%));
+                }
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

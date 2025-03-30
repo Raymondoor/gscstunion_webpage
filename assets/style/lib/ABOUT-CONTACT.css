@@ -1,0 +1,90 @@
+@import url(../template/aboutnav.css);
+main{
+    display: flex;
+    justify-content: space-between;
+}
+@media(min-width: 1001px){
+    #htmlContainer{
+        width: calc(100% - 300px);
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        p{
+            width: 90%;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        #form-dsk{
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        #form-mbl{
+            display: none;
+        }
+    }
+}
+@media(max-width: 1000px) and (min-width: 861px){
+    #htmlContainer{
+        width: calc(100% - 250px);
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        p{
+            width: 90%;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        #form-dsk{
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        #form-mbl{
+            display: none;
+        }
+    }
+}
+@media(max-width: 860px){
+    #htmlContainer{
+        width: 100%;
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        p{
+            width: 90%;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        #form-dsk{
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        #form-mbl{
+            display: none;
+        }
+    }
+}
+@media(max-width: 680px){
+    #htmlContainer{
+        width: 100%;
+        padding: 1rem 0;
+        h1{
+            text-align: center;
+        }
+        p{
+            width: 90%;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        #form-mbl{
+            display: block;
+            margin: 0 auto;
+            max-width: 350px;
+        }
+        #form-dsk{
+            display: none;
+        }
+    }
+}

@@ -1,30 +1,39 @@
-<?php $title = 'GSC学生連合 | 開発者用ページ';
-$file = 'ADMIN-DEV';
-$root = '../../';
-// Function
-require_once (__DIR__ . '/' . $root . '/app/api/general/DIR.php');
-require_once (API_DIR . '/general/HEADER.php');
-require_once (API_DIR . '/general/LINK.php');
-require_once (API_DIR . '/general/CHECK_IP.php');
-// modules
-require_once (API_DIR . '/brand.php');
+<?php $title='開発者ツール';
+$file='ADMIN'.'-'.'STATUS';
+$root='../../';
 
-// Header
-include_once (TEMPLATE_DIR . '/header.php');
-if (!ip_in_range($_SERVER['REMOTE_ADDR'], NETWORK_RANGE)) {
-    return_header('/');
-}
-if (!isset($_SESSION['user'])) {
-    return_header('/admin/login.php?error=Please_Login_To_access_Admin_Page');
-}
+require_once(__DIR__.'/'.$root.'/app/api/general/DIR.php');
+require_once(API_DIR.'/general/HEADER.php');
+require_once(API_DIR.'/general/LINK.php');
+require_once(API_DIR.'/load_content.php');
+require_once(API_DIR.'/list_content.php');
+require_once(API_DIR.'/validate_admin.php');
+session_start();
+admin_gate();
+include_once(TEMPLATE_DIR.'/header.php');
+$_SESSION['serverdate'] = date('l jS \of F Y h:i:s A');
 ?>
+
 <main>
-    <p>Username: <?= str_rot13($_SESSION['user']) ?></p>
     <ul>
-        <li><a href="./phpinfo.php">phpinfo</a></li>
-        <li>$_SERVER↓<pre><?= print_r($_SERVER) ?></pre></li>
-        <li>$_SESSION↓<pre><?= print_r($_SESSION) ?></pre></li>
+        <li><h3><a href="./phpinfo.php">phpinfo()</h3></a></li>
+        <li><h3><a href="./dev.php">dev</h3></a></li>
+        <li><h3>$_SESSION</h3>
+            <ul>
+<?php
+foreach($_SESSION as $index => $value){ ?>
+            <li><b><?=$index?></b> => <?=$value?></li>
+<?php } ?>
+            </ul>
+        </li>
+        <li><h3>$_SERVER</h3>
+            <ul>
+<?php
+foreach($_SERVER as $index => $value){ ?>
+            <li><b><?=$index?></b> => <?=$value?></li>
+<?php } ?>
+            </ul>
+        </li>
     </ul>
 </main>
-<?php
-include_once (TEMPLATE_DIR . '/footer.php');
+<?php unset($_SESSION['serverdate']);

@@ -1,43 +1,21 @@
-<?php $title = '新しい記事を書く';
-$file = 'ADMIN-ARTICLES-NEW';
-$root = '../../';
-// Function
-require_once (__DIR__ . '/' . $root . '/app/api/general/DIR.php');
-require_once (API_DIR . '/general/HEADER.php');
-require_once (API_DIR . '/general/LINK.php');
-require_once (API_DIR . '/general/TEXT_FORMAT.php');
-require_once (API_DIR . '/general/CHECK_IP.php');
-// modules
-require_once (API_DIR . '/brand.php');
+<?php $title='記事管理';
+$file='ADMIN'.'-'.'ARTICLE';
+$root='../../';
 
-// Header
-include_once (TEMPLATE_DIR . '/header.php');
-if (!ip_in_range($_SERVER['REMOTE_ADDR'], NETWORK_RANGE)) {
-    return_header('/');
-}
-if (!isset($_SESSION['user'])) {
-    return_header('/admin/login.php?error=Please_Login_To_access_Admin_Page');
-}
+require_once(__DIR__.'/'.$root.'/app/api/general/DIR.php');
+require_once(API_DIR.'/general/HEADER.php');
+require_once(API_DIR.'/general/LINK.php');
+require_once(API_DIR.'/load_content.php');
+require_once(API_DIR.'/list_content.php');
+require_once(API_DIR.'/validate_admin.php');
+session_start();
+admin_gate();
+include_once(TEMPLATE_DIR.'/header.php');
 ?>
 <main>
-    <h2>新しい記事を書く</h2>
-    <form action="<?= FORM_URL . '/adm-newart.php' ?>" method="post">
-        <label for="title">*タイトル</label>
-        <input type="text" name="title" placeholder="タイトル" autocomplete="off" id="title"><br>
-        <label for="date">*日付</label>
-        <input type="text" name="date" placeholder="yyyy-mm-dd" value="<?= date('Y-m-d') ?>" readonly><br>
-        <label for="main">*内容</label>
-        <textarea name="main"></textarea><br>
-        <label for="video">埋め込み動画（任意）</label>
-        <input type="text" name="video" placeholder="例: <iframe src=&quot;https://www.youtube.com/embed/&quot;>" autocomplete="off" id="video"><br>
-        <input type="submit" value="投稿する">
-    </form>
-    <p>
-<?php if (isset($_SESSION['newarterr'])) {
-    echo $_SESSION['newarterr'];
-    unset($_SESSION['newarterr']);
-} ?>
-    </p>
+    <h2>記事一覧</h2>
+    <p><a href="./new.php">記事新規登録はこちら</a></p><hr>
+<?=list_articles_edit()?>
 </main>
 <?php
-include_once (TEMPLATE_DIR . '/footer.php');
+include_once(TEMPLATE_DIR.'/footer.php');
