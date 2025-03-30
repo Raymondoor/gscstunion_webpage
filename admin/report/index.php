@@ -10,7 +10,7 @@ require_once(API_DIR.'/list_content.php');
 require_once(API_DIR.'/validate_admin.php');
 session_start();
 admin_gate();
-$reports = getdir();
+$reports = load_report();
 include_once(TEMPLATE_DIR.'/header.php');
 ?>
 <main>
@@ -21,8 +21,10 @@ include_once(TEMPLATE_DIR.'/header.php');
         <form action="<?=FORM_URL?>/adm-report.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="csrf" value="<?=$_SESSION['csrf']?>">
             <input type="hidden" name="action" value="new">
-            <label for="">ファイル（.pdf）ファイル名は<b>必ず</b>年度.pdfにしてください。例「2014.pdf」</label>
-            <input type="file" name="report" accept=".pdf"><br>
+            <label for="">表示名：</label>
+            <input type="text" name="label"><br>
+            <label for="">PDFリンク：</label>
+            <input type="url" name="report"><br>
             <input type="submit" value="公開">
         </form>
     </div>
@@ -32,8 +34,8 @@ include_once(TEMPLATE_DIR.'/header.php');
         <form action="<?=FORM_URL?>/adm-report.php" method="post">
             <input type="hidden" name="csrf" value="<?=$_SESSION['csrf']?>">
             <input type="hidden" name="action" value="delete">
-<?php foreach($reports as $item){?>
-            <input type="submit" name="filename" value="<?=$item?>"><br>
+<?php foreach($reports as $key => $value){?>
+            <input type="submit" name="key" value="<?=$key?>"><br>
 <?php }?>
         </form>
     </div>

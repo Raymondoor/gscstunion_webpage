@@ -17,6 +17,10 @@ function load_sns(){
     $SNS['ID']['var']
     */
 }
+function load_report(){
+    $REP = file_get_contents(DATA_DIR.'/json/report.json');
+    return json_decode($REP, true);
+}
 function load_content(){
     $content = json_decode(file_get_contents(DATA_DIR.'/json/content.json'), true);
     $filedata = [];
@@ -78,26 +82,3 @@ function load_hashtag($id){ // SELECT article.*, image.*, FROM article JOIN imag
     $hashtag = $list[0];
     return $hashtag;
 }
-function getdir(){
-    $items = scandir(ROOT_DIR.'/about/report/');
-    $files = [];
-    if(empty($items)){
-        return false;
-    }
-    foreach($items as $item){
-        if($item === '.' || $item === '..' || $item === 'index.php' || $item === 'document.php'){
-            continue;
-        }
-        $fullPath = ROOT_DIR.'/about/report/'.$item;
-        if (is_file($fullPath)){
-            $detection = mb_detect_encoding($item, ['UTF-8', 'SJIS', 'EUC-JP', 'ISO-8859-1'], true);
-            if($detection === false){
-                $files[] = $item;
-            }else{
-                $item = mb_convert_encoding($item, 'UTF-8', $detection);
-                $files[] = $item;
-            }
-        }
-    }
-    return $files;
-};

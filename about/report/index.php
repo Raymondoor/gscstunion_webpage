@@ -8,15 +8,16 @@ require_once(API_DIR.'/general/LINK.php');
 require_once(API_DIR.'/load_content.php');
 require_once(API_DIR.'/list_content.php');
 
-$reports = getdir();
+$reports = load_report();
 include_once(TEMPLATE_DIR.'/header.php');
 ?>
 <main>
     <div id="htmlContainer">
         <h1>年次報告書</h1>
+        <p>Google DriveにPDF形式で保存されています。</p>
         <ul>
-<?php foreach ($reports as $report){?>
-            <li><a href="./<?=$report?>"><?=$SEO['Organization'].'_'.str_replace('.pdf', '', $report).'年度報告書'?></a></li>
+<?php foreach ($reports as $report => $value){?>
+            <li><a href="<?=$value?>" target="_blank"><?=$report?></a></li>
 <?php }?>
         </ul>
     </div>
