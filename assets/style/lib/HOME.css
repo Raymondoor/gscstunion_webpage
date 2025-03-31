@@ -76,7 +76,8 @@ main{
     #latestArticles{
         margin: 0;
         background-color: var(--BackTone);
-        h1{
+        h2{
+            font-size: 2rem;
             margin: 0;
             padding: 0.75rem 0;
             text-align: center;
@@ -174,12 +175,12 @@ main{
         }
     }
     @media(max-width: 920px){
-        h1{
+        h2{
             font-size: 1.75rem;
         }
     }
     @media(max-width: 680px){
-        h1{
+        h2{
             font-size: 1.5rem;
         }
     }
@@ -257,7 +258,8 @@ main{
         color: white;
         max-height: max-content;
         min-height: 45vh;
-        h1{
+        h2{
+            font-size: 2rem;
             text-align: center;
             margin: 0;
             padding: 1rem;

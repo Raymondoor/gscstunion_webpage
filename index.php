@@ -16,7 +16,7 @@ include_once(TEMPLATE_DIR.'/header.php');
             <!--<source src="<?=IMAGES_URL?>/main/00015.mp4" type="video/mp4">-->
         </video>
         <div id="hb-text">
-            <h2><?=$SEO['Organization']?></h2>
+            <h1><?=$SEO['Organization']?></h1>
             <h3><ruby>地球社会共生学部学生連合<rt>ちきゅうしゃかいきょうせいがくぶがくせいれんごう</rt><rp>ちきゅうしゃかいきょうせいがくぶがくせいれんごう</rp></ruby></h3>
             <h3>青山学院大学</h3>
         </div>
@@ -32,7 +32,7 @@ include_once(TEMPLATE_DIR.'/header.php');
     </div>
     <hr>
     <div id="latestArticles">
-        <h1>新着記事</h1>
+        <h2>新着記事</h2>
         <div id="articlesContainer">
 <?=list_articles_home()?>
         </div>
@@ -43,7 +43,7 @@ include_once(TEMPLATE_DIR.'/header.php');
     </div>
     <hr>
     <div id="sns">
-        <h1>SNS</h1>
+        <h2>SNS</h2>
         <div id="snsRest">
             <div id="snsContainer">
 <?php foreach($SNS as $tag){?>
