@@ -7,12 +7,19 @@ main{
     #htmlContainer{
         width: calc(100% - 300px);
         padding: 20px;
+        p{
+            width: fit-content;
+            margin: 0.5rem auto;
+        }
         h1{
             text-align: center;
         }
         ul{
             width: fit-content;
             margin: 0 auto;
+        }
+        li{
+            line-height: 2rem;
         }
     }
 }
@@ -20,12 +27,19 @@ main{
     #htmlContainer{
         width: calc(100% - 250px);
         padding: 20px;
+        p{
+            width: fit-content;
+            margin: 0.5rem auto;
+        }
         h1{
             text-align: center;
         }
         ul{
             width: fit-content;
             margin: 0 auto;
+        }
+        li{
+            line-height: 1.75rem;
         }
     }
 }
@@ -33,12 +47,19 @@ main{
     #htmlContainer{
         width: 100%;
         padding: 20px;
+        p{
+            width: fit-content;
+            margin: 0.25rem auto;
+        }
         h1{
             text-align: center;
         }
         ul{
             width: fit-content;
             margin: 0 auto;
+        }
+        li{
+            line-height: 1.5rem;
         }
     }
 }

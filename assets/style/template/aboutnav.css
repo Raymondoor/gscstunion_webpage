@@ -1,3 +1,6 @@
+#aboutNavContainer{
+    font-family: var(--AltFont);
+}
 @media(min-width: 1001px){
     #aboutNavContainer{
         background-image: url(../../image/main/aboutnav.JPG);
