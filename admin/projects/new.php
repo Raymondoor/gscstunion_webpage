@@ -34,7 +34,8 @@ if(isset($_SESSION['newproerr'])){ ?>
         <label for="">概要説明</label>
         <input type="text" name="pDescription" id="pDescription"><br>
         <label for="">写真（.jpg, .jpeg, .png, .gif 対応。800kb以下、推奨500kb以下）</label>
-        <input type="file" name="pThumbnail" accept=".jpg, .jpeg, .png, .gif"><br>
+        <input type="file" name="pThumbnail" accept=".jpg, .jpeg, .png, .gif" id="thumb"><br>
+        <img id="preview"><br>
         <input type="submit" value="登録">
     </form>
 </main>

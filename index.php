@@ -1,4 +1,5 @@
-<?php $title = '';
+<?php global $SEO, $SNS, $content;
+$title = '';
 $file = 'HOME';
 $root = './';
 

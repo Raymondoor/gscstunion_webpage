@@ -18,16 +18,17 @@ main{
     font-family: var(--BaseFont);
 }
 input {
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 0;
     font-family: var(--BaseFont);
 }
 option{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: var(--BaseFont);
 }
 select {
-    font-size: 16px;
+    font-size: 1rem;
+    font-family: var(--BaseFont);
 }
 #editor{
     min-height: 20rem;
@@ -51,6 +52,9 @@ select {
         }
     }
 }
+#thumb{
+    margin: 0.25rem;
+}
 .ql-youtube {
     display: inline-flex;
     align-items: center;
@@ -65,4 +69,18 @@ select {
     padding: 0.25rem;
     background-color: var(--MainColour);
     color: white;
+}
+::file-selector-button, ::-webkit-file-upload-button{
+    font-family: var(--BaseFont);
+    background-color: rgb(209, 213, 219);
+    color: rgb(31, 41, 55);
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(191, 194, 199);
+    padding: 0.25rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+}
+#preview{
+    height: 5rem;
 }

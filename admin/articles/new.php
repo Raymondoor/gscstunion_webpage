@@ -45,8 +45,8 @@ foreach($hopt as $option){ ?>
         </select><br>
         <label>検索＆新しいカテゴリを追加</label><br>
         <input type="text" id="newhash" name="newhash"><p id="match"></p>
-        <label for="">表紙写真（.jpg, .jpeg, .png 対応。800kb以下、推奨500kb以下）</label><br>
-        <input type="file" name="thumbnail" accept=".jpg, .jpeg, .png"><br>
+        <label for="thumbnail">表紙写真（.jpg, .jpeg, .png 対応。800kb以下、推奨500kb以下）</label><br>
+        <input type="file" id="thumb" name="thumbnail" accept=".jpg, .jpeg, .png"><br>
         <label for="editor">本文</label>
         <div id="editor"></div>
         <input type="hidden" id="editorInput" name="main"><br>

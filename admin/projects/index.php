@@ -16,7 +16,9 @@ include_once(TEMPLATE_DIR.'/header.php');
     <h2>プロジェクト一覧</h2>
     <p><a href="./new.php">プロジェクト新規登録はこちら</a></p>
     <p><a href="./order.php">表示順を変更する</a></p><hr>
-<?php echo list_projects_edit() ?>
+    <div id="pContainer">
+<?=list_projects_edit()?>
+    </div>
 </main>
 <?php
 include_once(TEMPLATE_DIR.'/footer.php');
