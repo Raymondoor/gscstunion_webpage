@@ -1,3 +1,20 @@
 #preview{
     height: 5rem;
 }
+form{
+    margin: 0.25rem;
+}
+#thumb{
+    margin: 0.25rem;
+}
+::file-selector-button, ::-webkit-file-upload-button{
+    font-family: var(--BaseFont);
+    background-color: rgb(209, 213, 219);
+    color: rgb(31, 41, 55);
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(191, 194, 199);
+    padding: 0.25rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.25rem;
+}
