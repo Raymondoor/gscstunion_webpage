@@ -143,7 +143,7 @@ main{
                             width: var(--size);
                         }
                         h3{
-                            font-size: 1.125rem;
+                            font-size: 1rem;
                         }
                         p{
                             font-size: 0.9rem;

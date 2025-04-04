@@ -2,6 +2,10 @@
 main{
     display: flex;
     justify-content: space-between;
+    background-image: url(../../image/main/winter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 @media(min-width: 1001px){
     #htmlContainer{
@@ -9,6 +13,11 @@ main{
         padding: 20px;
         h1{
             text-align: center;
+        }
+        p{
+            max-width: 580px;
+            text-align: left;
+            margin: 0.75rem auto;
         }
         .account{
             --size: 5rem;
@@ -40,9 +49,6 @@ main{
                     filter: drop-shadow(2px 2px hsl(0, 0%, 60%));
                 }
             }
-        }
-        p{
-            text-align: center;
         }
     }
 }
@@ -53,6 +59,11 @@ main{
         h1{
             text-align: center;
         }
+        p{
+            max-width: 500px;
+            text-align: left;
+            margin: 0.75rem auto;
+        }
         .account{
             --size: 5rem;
             width: var(--size);
@@ -83,9 +94,6 @@ main{
                     filter: drop-shadow(2px 2px hsl(0, 0%, 60%));
                 }
             }
-        }
-        p{
-            text-align: center;
         }
     }
 }
@@ -96,6 +104,11 @@ main{
         h1{
             text-align: center;
         }
+        p{
+            max-width: 500px;
+            text-align: left;
+            margin: 0.75rem auto;
+        }
         .account{
             --size: 5rem;
             width: var(--size);
@@ -126,9 +139,6 @@ main{
                     filter: drop-shadow(2px 2px hsl(0, 0%, 60%));
                 }
             }
-        }
-        p{
-            text-align: center;
         }
     }
 }

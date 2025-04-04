@@ -34,6 +34,7 @@
     </div>
     <hr>
 </footer>
+<div id="varaety"></div>
     <script src="<?=SCRIPT_URL?>/index.js"></script>
     <script src="<?=SCRIPT_URL?>/jquery-3.7.1.min.js"></script>
     <script src="<?=SCRIPT_URL?>/anime.min.js"></script>
