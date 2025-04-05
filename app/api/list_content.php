@@ -173,15 +173,22 @@ function list_articles_home(){
     $list = $query->Operation([]);
     $content = '';
     ob_start();
-    foreach($list as $key => $article){ ?>
-    <div style="background-color: #<?=$article['colour']?>" class="article">
-        <a href="<?=PAGE_URL.'/'.$article['id'].'.php'?>">
-            <div class="aImage" style="background-image: url(<?=IMAGES_URL.'/main/articles/thumbnail/'.$article['thumbnail']?>);"></div>
-            <h3><?=$article['title']?></h3>
-            <p><?=$article['pName']?> PJ</p>
-            <p><i><?=$article['date']?></i></p>
-        </a>
-    </div><?=PHP_EOL?><?php
+    foreach($list as $key => $article){ 
+        $date = explode('-', $article['date']);
+        ?>
+    <div class="article card">
+    <div class="wrapper" style="background: url(<?=IMAGES_URL.'/main/articles/thumbnail/'.$article['thumbnail']?>) center/cover no-repeat;">
+    <div class="date" style="background-color: #<?=$article['colour']?>;"><?=$date[0]?>年<?=$date[1]?>月<?=$date[2]?>日</div>
+      <div class="data" style="background-color: #<?=$article['colour']?>;">
+        <div class="content">
+          <span class="pjname"><?=$article['pName']?> PJ</span>
+          <h3><a href="<?=PAGE_URL.'/'.$article['id'].'.php'?>" class="card_href" style="color:#fff"><?=mb_substr(sanitize_main($article['title']),0,20,'UTF-8').(mb_strlen(sanitize_main($article['title']),'UTF-8')>20 ? '...' : '')?></a></h3>
+          <p class="text"><?=mb_substr(sanitize_main($article['main']),0,40,'UTF-8').(mb_strlen(sanitize_main($article['main']),'UTF-8')>40 ? '...' : '')?></p>
+          <a href="<?=PAGE_URL.'/'.$article['id'].'.php'?>" class="button">詳しく読む</a>
+        </div>
+      </div>
+    </div>
+  </div><?=PHP_EOL?><?php
     }
     $content .= ob_get_clean();
     return $content;
