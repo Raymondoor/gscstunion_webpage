@@ -9,16 +9,17 @@ require_once(API_DIR.'/validate_admin.php');
 session_start();
 if($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['action'] === 'new'){
     if(csrf_gate('report-new')){
-        if(!empty($_POST['label']) || !empty($_POST['report'])){
+        if(!empty($_POST['label']) || !empty($_POST['report']) || !empty($_POST['term'])){
             $newlabel = $_POST['label'];
             $newreport = $_POST['report'];
-            $data = load_report();
-            $data[$newlabel] = $newreport;
-            $jsonUpdated = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-            if($jsonUpdated === false || file_put_contents(DATA_DIR.'/json/report.json', $jsonUpdated) === false){
-                return_header('/admin/report/?&error=My_Bad');
-            }else{
+            $newterm = $_POST['term'];
+
+            $query = new DatabaseStatement("INSERT INTO report (term, name, link) VALUES (:term, :name, :link)");
+            $result = $query->Operation([':term' => $newterm, ':name' => $newlabel, ':link' => $newreport]);
+            if($result == 1){
                 return_header('/admin/report/', true);
+            }else{
+                return_header('/admin/report/?&error=My_Bad');
             }
         }else{
             return_header('/admin/report/?error=Fill_All');
@@ -26,14 +27,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['action'] === 'new'){
     }
 }elseif($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['action'] === 'delete'){
     if(csrf_gate('report-delete')){
-        $data = load_report();
-        $key = $_POST['key'];
-        unset($data[$key]);
-        $jsonUpdated = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
-        if($jsonUpdated === false || file_put_contents(DATA_DIR.'/json/report.json', $jsonUpdated) === false){
-            return_header('/admin/report/?&error=My_Bad');
+        $name = $_POST['name'];
+        $query = new DatabaseStatement("DELETE FROM report WHERE name = :name");
+        $result = $query->Operation([':name' => $name]);
+        if($result == 1){
+            return_header('/about/report/', true);
         }else{
-            return_header('/about/report/?message=Successfully_Deleted', true);
+            return_header('/admin/report/?&error=My_Bad');
         }
     }
 }

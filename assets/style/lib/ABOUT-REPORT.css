@@ -2,24 +2,35 @@
 main{
     display: flex;
     justify-content: space-between;
+    table{
+        font-family: "Zen Kaku";
+    }
 }
 @media(min-width: 1001px){
     #htmlContainer{
         width: calc(100% - 300px);
         padding: 20px;
-        p{
-            width: fit-content;
-            margin: 0.5rem auto;
-        }
         h1{
             text-align: center;
         }
-        ul{
-            width: fit-content;
+        table {
+            border-collapse: collapse;
             margin: 0 auto;
         }
-        li{
-            line-height: 2rem;
+        td, th {
+            padding: 0.5rem;
+            border: 1px solid black;
+        }
+        td[rowspan] {
+            vertical-align: middle;
+        }
+        a{
+            text-decoration: underline;
+            color: black;
+            transition: color 240ms;
+        }
+        a:hover{
+            color: var(--SubColour);
         }
     }
 }
@@ -27,19 +38,29 @@ main{
     #htmlContainer{
         width: calc(100% - 250px);
         padding: 20px;
-        p{
-            width: fit-content;
-            margin: 0.5rem auto;
-        }
         h1{
             text-align: center;
+            font-size: 1.5rem;
         }
-        ul{
-            width: fit-content;
+        table {
+            border-collapse: collapse;
             margin: 0 auto;
         }
-        li{
-            line-height: 1.75rem;
+        td, th {
+            padding: 0.5rem;
+            border: 1px solid black;
+            font-size: 0.875rem;
+        }
+        td[rowspan] {
+            vertical-align: middle;
+        }
+        a{
+            text-decoration: underline;
+            color: black;
+            transition: color 240ms;
+        }
+        a:hover{
+            color: var(--SubColour);
         }
     }
 }
@@ -47,19 +68,36 @@ main{
     #htmlContainer{
         width: 100%;
         padding: 20px;
-        p{
-            width: fit-content;
-            margin: 0.25rem auto;
-        }
         h1{
             text-align: center;
+            font-size: 1.25rem;
         }
-        ul{
-            width: fit-content;
+        table {
+            border-collapse: collapse;
             margin: 0 auto;
         }
-        li{
-            line-height: 1.5rem;
+        td, th {
+            padding: 0.25rem;
+            border: 1px solid black;
+            font-size: 0.875rem;
+        }
+        @media(max-width: 600px){
+            td, th {
+                padding: 0.125rem;
+                border: 1px solid black;
+                font-size: 0.875rem;
+            }
+        }
+        td[rowspan] {
+            vertical-align: middle;
+        }
+        a{
+            text-decoration: underline;
+            color: black;
+            transition: color 240ms;
+        }
+        a:hover{
+            color: var(--SubColour);
         }
     }
 }

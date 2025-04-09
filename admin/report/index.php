@@ -21,6 +21,8 @@ include_once(TEMPLATE_DIR.'/header.php');
         <form action="<?=FORM_URL?>/adm-report.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="csrf" value="<?=$_SESSION['csrf']?>">
             <input type="hidden" name="action" value="new">
+            <label for="">年度：</label>
+            <input type="number" name="term" value="<?=date('Y')-1?>"><br>
             <label for="">表示名：</label>
             <input type="text" name="label"><br>
             <label for="">PDFリンク：</label>
@@ -35,7 +37,7 @@ include_once(TEMPLATE_DIR.'/header.php');
             <input type="hidden" name="csrf" value="<?=$_SESSION['csrf']?>">
             <input type="hidden" name="action" value="delete">
 <?php foreach($reports as $key => $value){?>
-            <input type="submit" name="key" value="<?=$key?>"><br>
+            <input type="submit" name="name" value="<?=$value['name']?>"><br>
 <?php }?>
         </form>
     </div>

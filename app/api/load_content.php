@@ -17,9 +17,16 @@ function load_sns(){
     $SNS['ID']['var']
     */
 }
-function load_report(){
-    $REP = file_get_contents(DATA_DIR.'/json/report.json');
-    return json_decode($REP, true);
+function load_report(int $term = 0){
+    if(empty($term)){
+        $query = new DatabaseStatement("SELECT * FROM report ORDER BY term DESC");
+        $list = $query->Operation([]);
+        return $list;
+    }else{
+        $query = new DatabaseStatement("SELECT * FROM report WHERE term = :term");
+        $list = $query->Operation([':term' => $term]);
+        return $list;
+    }
 }
 function load_content(){
     $content = json_decode(file_get_contents(DATA_DIR.'/json/content.json'), true);
