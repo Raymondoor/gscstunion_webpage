@@ -193,7 +193,7 @@ header{
     }
     @media(max-width: 680px){
         nav{
-            #rel_link{
+            .mobhid{
                 display: none;
             }
             #hb-menu{

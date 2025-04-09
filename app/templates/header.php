@@ -4,10 +4,10 @@
     <nav>
         <div id="rel_link">
             <p><a href="<?=APP_URL?>/">ホーム</a></p>
-            <p><a href="<?=APP_URL?>/projects/">プロジェクト</a></p>
-            <p><a href="<?=APP_URL?>/articles/">記事</a></p>
-            <p><a href="<?=APP_URL?>/timeline/">タイムライン</a></p>
-            <p><a href="<?=APP_URL?>/about/">私たちについて</a></p>
+            <p class="mobhid"><a href="<?=APP_URL?>/projects/">プロジェクト</a></p>
+            <p class="mobhid"><a href="<?=APP_URL?>/articles/">記事</a></p>
+            <p class="mobhid"><a href="<?=APP_URL?>/timeline/">タイムライン</a></p>
+            <p class="mobhid"><a href="<?=APP_URL?>/about/">私たちについて</a></p>
         </div>
         <div id="hb-menu">
             <hr><hr><hr>
