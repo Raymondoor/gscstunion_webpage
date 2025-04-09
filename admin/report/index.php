@@ -36,9 +36,11 @@ include_once(TEMPLATE_DIR.'/header.php');
         <form action="<?=FORM_URL?>/adm-report.php" method="post">
             <input type="hidden" name="csrf" value="<?=$_SESSION['csrf']?>">
             <input type="hidden" name="action" value="delete">
-<?php foreach($reports as $key => $value){?>
+<?php 
+if(!empty($reports)){
+    foreach($reports as $key => $value){?>
             <input type="submit" name="name" value="<?=$value['name']?>"><br>
-<?php }?>
+<?php }}?>
         </form>
     </div>
 </main>

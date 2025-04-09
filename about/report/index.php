@@ -20,20 +20,22 @@ include_once(TEMPLATE_DIR.'/header.php');
                 <th>PDF（Google Driveに保存されています）</th>
             </tr>
 <?php
-$termCounts = [];
-foreach($reports as $row){
-    $termCounts[$row['term']] = ($termCounts[$row['term']] ?? 0) + 1;
-}
-$previousterm = null;
-foreach($reports as $row){?>
+if(!empty($reports)){
+    $termCounts = [];
+    foreach($reports as $row){
+        $termCounts[$row['term']] = ($termCounts[$row['term']] ?? 0) + 1;
+    }
+    $previousterm = null;
+    foreach($reports as $row){?>
             <tr><?php
-    if($previousterm !== $row['term']){
-        // Add rowspan attribute with the count of names for this term?>
+        if($previousterm !== $row['term']){
+            // Add rowspan attribute with the count of names for this term?>
                 <td rowspan='<?=$termCounts[$row['term']]?>'><?=$row['term']?>年度末書類</td><?php
-        $previousterm = $row['term'];
-    }?>
+            $previousterm = $row['term'];
+        }?>
                 <td><li><a href="<?=$row['link']?>" target="_blank"><?=$row['name']?>&#8599</a></li></td>
             </tr><?php
+    }
 }?>
         </table>
     </div>

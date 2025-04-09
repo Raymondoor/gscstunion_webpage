@@ -60,3 +60,11 @@ BEGIN
        SET pOrder = NEW.id
      WHERE id = NEW.id;
 END;
+CREATE TABLE report (
+    id   INTEGER PRIMARY KEY AUTOINCREMENT
+                 NOT NULL
+                 UNIQUE,
+    term INTEGER,
+    name TEXT    NOT NULL,
+    link TEXT
+);
