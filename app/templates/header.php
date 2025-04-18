@@ -10,7 +10,7 @@
             <p class="mobhid"><a href="<?=APP_URL?>/about/">私たちについて</a></p>
         </div>
         <div id="hb-menu">
-            <hr><hr><hr>
+            <hr><hr><p>MENU</p><hr><hr>
         </div>
         <div id="hb-nav">
             <div id="nav-rel_link">

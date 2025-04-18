@@ -59,8 +59,17 @@ header{
                 border: none;
                 transition: all 240ms;
             }
-            #sensor{
-                display: none;
+            p{
+                margin: 0;
+                background: linear-gradient(to right, var(--SubColour), var(--MainColour));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 0.625rem;
+                text-align: center;
+                font-weight: 900;
+                transition: all 240ms;
+                font-family: "Zen Kaku";
             }
         }
         #hb-menu:hover{
@@ -68,7 +77,9 @@ header{
             filter: blur(0.25px);
             hr{
                 box-shadow: 1px 1px rgb(45, 45, 45);
-                background: linear-gradient(to right, var(--OrgColour), var(--SubColour));
+            }
+            p{
+                text-shadow: 0.5px 0.5px rgb(110, 110, 110);
             }
         }
         #hb-nav{
@@ -200,5 +211,13 @@ header{
                 margin-left: auto;
             }
         }
+    }
+}
+@media(max-width: 680px){
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 }
