@@ -36,19 +36,20 @@ class DividerBlot extends Block {
   static create(value) {
     let node = super.create(value);
     // give it some margin
-    node.setAttribute('style', "margin:1rem !important;background: rgb(128, 128, 128);height: 1px;");
+    node.setAttribute('style', "margin:1rem !important;");
     return node;
 }
 }
 Quill.register(DividerBlot);
 
 const quill = new Quill('#editor', {
+    
     modules: {
     toolbar: [
         [{align:[]}, {header: [2, 3, false]}],
         [{'color': []}, 'bold', 'italic', 'underline', 'strike'],
         ['link', 'divider', 'blockquote', 'code-block', 'image', 'youtube'],
-        [{ list: 'ordered' }, { list: 'bullet' }],
+        [{ list: 'ordered' }],
     ],
     },
     theme: 'snow',
@@ -81,10 +82,6 @@ hrImg.style.width = '18px'; // Match typical Quill icon size
 hrImg.style.height = '18px';
 document.querySelector('.ql-divider').appendChild(hrImg);
 
-function ol2ul(html){
-    return html.replace(/<ol>(<li data-list="bullet".*?)<\/ol>/g, '<ul>$1</ul>')
-               .replace(/<li data-list="bullet"(.*?)>/g, '<li$1>'); // Preserve attributes like class
-}
 var editor = document.getElementById('editor');
 var editorInput = document.getElementById('editorInput');
 
@@ -97,7 +94,7 @@ function adjustEditorHeight(){
 }
 quill.on('text-change', function(delta, oldDelta, source) {    
     var editorHtml = editor.querySelector('.ql-editor').innerHTML;
-    editorInput.value = ol2ul(editorHtml);
+    editorInput.value = editorHtml;
     adjustEditorHeight();
 });
 
