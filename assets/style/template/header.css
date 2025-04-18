@@ -2,6 +2,10 @@ header{
     font-family: var(--BaseFont);
     background-color: hsl(0, 0%, 94%);
     padding: 0;
+    position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     hr{
         margin: 0;
         height: 2.5px;
@@ -44,15 +48,15 @@ header{
         #hb-menu{
             --size: 2rem;
             height: var(--size);
-            width: var(--size);
+            width: fit-content;
             margin: auto 0;
             padding: 0 0.5rem;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            transition: all 240ms;
             hr{
                 height: 0.125rem;
-                width: var(--size);
                 flex-wrap: wrap;
                 border-radius: 0.125rem;
                 background: linear-gradient(to right, var(--SubColour), var(--MainColour));
@@ -75,12 +79,6 @@ header{
         #hb-menu:hover{
             cursor: pointer;
             filter: blur(0.25px);
-            hr{
-                box-shadow: 1px 1px rgb(45, 45, 45);
-            }
-            p{
-                text-shadow: 0.5px 0.5px rgb(110, 110, 110);
-            }
         }
         #hb-nav{
             overflow-y: auto;
@@ -211,13 +209,5 @@ header{
                 margin-left: auto;
             }
         }
-    }
-}
-@media(max-width: 680px){
-    header{
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 }
