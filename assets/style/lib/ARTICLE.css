@@ -50,6 +50,11 @@ main{
       ul{
         margin: 0.5rem 0;
       }
+      hr{
+        margin:1rem !important;
+        /* background: rgb(128, 128, 128); */
+        height: 2px;
+      }
     }
   }
 }
