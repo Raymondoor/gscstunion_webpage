@@ -165,7 +165,7 @@ main{
         }
         @media(max-width: 400px){
           .article{
-            --height: 10rem;
+            --height: 8rem;
             height: var(--height);
             a{
               height: var(--height);
@@ -201,6 +201,21 @@ main{
             }
           }
         }
+      }
+    }
+  }
+  @media(max-width: 680px){
+    #articles{
+      background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(241, 250, 234, 1) 50%, rgba(234, 250, 234, 1) 100%) !important;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 1.5rem;
+      h2{
+        text-align: center;
+        margin: 0;
+        padding: 1.5rem;
+        color: #000;
       }
     }
   }
