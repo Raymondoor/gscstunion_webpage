@@ -76,7 +76,7 @@ document.querySelector('.ql-youtube').appendChild(youtubeImg);
 
 document.querySelector('.ql-divider').innerHTML = ''; // Clear default content
 const hrImg = document.createElement('img');
-hrImg.src = '../../../assets/image/share/bits/hr.png'; // Icon URL
+hrImg.src = '../../assets/image/share/bits/hr.png'; // Icon URL
 hrImg.alt = 'Dividing Line';
 hrImg.style.width = '18px'; // Match typical Quill icon size
 hrImg.style.height = '18px';
