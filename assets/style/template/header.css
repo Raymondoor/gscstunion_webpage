@@ -200,7 +200,7 @@ header{
             }
         }
     }
-    @media(max-width: 680px){
+    @media(max-width: 690px){
         nav{
             .mobhid{
                 display: none;
