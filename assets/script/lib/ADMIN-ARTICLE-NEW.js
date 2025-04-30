@@ -121,3 +121,15 @@ document.getElementById('thumb').addEventListener('change', (e) =>{
     };
     reader.readAsDataURL(file);
 });
+document.getElementById("newart").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Stops the form from submitting
+  }
+});
+function checkFileSize(input) {
+  const maxSize = 819200; // 2MB in bytes
+  if (input.files[0] && input.files[0].size > maxSize) {
+    alert("ファイルサイズが大きすぎます！");
+    input.value = ""; // Clear the input
+  }
+}

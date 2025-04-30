@@ -21,7 +21,7 @@ if(isset($_SESSION['newarterr'])){ ?>
 }else{ ?>
     <p></p>
 <?php }?>
-    <form action="<?=FORM_URL?>/adm-artnew.php" method="post" enctype="multipart/form-data">
+    <form action="<?=FORM_URL?>/adm-artnew.php" method="post" enctype="multipart/form-data" id="newart">
         <input type="hidden" name="csrf" value="<?=$_SESSION['csrf']?>">
         <label for="">プロジェクト</label><br>
         <select name="projectid" id="projectid" title="プロジェクト">
@@ -33,7 +33,7 @@ foreach($propt as $option){ ?>
         </select><br>
         <label for="">タイトル</label><br>
         <input type="text" name="title" id="title"><br>
-        <label for="date">日付</label><br>
+        <label for="date">日付（変更出来ません）</label><br>
         <input type="text" name="date" id="date" value="<?=date('Y-m-d')?>" readonly><br>
         <label for="">カテゴリ</label><br>
         <select name="hid" id="hid" title="カテゴリ">
@@ -43,10 +43,11 @@ foreach($hopt as $option){ ?>
             <option value="<?=$option['id']?>">#<?=$option['hName']?></option>
 <?php }?>
         </select><br>
-        <label>検索＆新しいカテゴリを追加</label><br>
-        <input type="text" id="newhash" name="newhash"><p id="match"></p>
+        <label>検索＆新しいカテゴリを追加（"#"は入力不要です）</label><br>
+        # <input type="text" id="newhash" name="newhash"><p id="match"></p>
         <label for="thumbnail">表紙写真（.jpg, .jpeg, .png 対応。800kb以下、推奨500kb以下）</label><br>
-        <input type="file" id="thumb" name="thumbnail" accept=".jpg, .jpeg, .png"><br>
+        <input type="file" id="thumb" name="thumbnail" accept=".jpg, .jpeg, .png" onchange="checkFileSize(this)"><br>
+        <img id="preview"><br>
         <label for="editor">本文</label>
         <div id="editor"></div>
         <input type="hidden" id="editorInput" name="main"><br>

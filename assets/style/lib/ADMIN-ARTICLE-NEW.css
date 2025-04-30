@@ -12,6 +12,11 @@
 #match {
     margin-top: 0px;
 }
+#title{
+    min-width: 280px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 main{
     margin-left: 10px;
     margin-right: 10px;
@@ -19,7 +24,6 @@ main{
 }
 input {
     font-size: 1rem;
-    border-radius: 0;
     font-family: var(--BaseFont);
 }
 option{
@@ -84,7 +88,16 @@ select {
 #preview{
     height: 5rem;
 }
+.ql-toolbar{
+    max-width: clamp(280px, 80%, 1200px);
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(2.5rem + (0.25rem * 2) + 2.5px);
+    background-color: #f1f1f1 !important;
+    z-index: 1;
+}
 .ql-container{
+    max-width: clamp(280px, 80%, 1200px);
     h2{
         margin: 0.5rem 0 !important;
     }
