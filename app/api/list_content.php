@@ -240,16 +240,16 @@ function list_timeline_index(){
     ob_start();
     if(empty($list)){ global $SEO;?>
         <div class="post" id="tColour1">
-            <p class="author"><?=$SEO['Alias']?> より</p>
             <p class="date"><i><?=date('Y-m-d')?></i></p>
-            <p class="message">> まだメッセージがありません</p>
+            <p class="author"><?=$SEO['Alias']?> より</p>
+            <p class="message">まだメッセージがありません</p>
         </div><?=PHP_EOL?><?php
     }
     foreach($list as $key => $timeline){ $num ++; ?>
         <div class="post" id="tColour<?=$num?>">
-            <p class="author"><?=$timeline['author']?> より</p>
             <p class="date"><i><?=dynamic_date_disp($timeline['date'])?></i></p>
-            <p class="message">> <?=$timeline['message']?></p>
+            <p class="author"><?=$timeline['author']?> より</p>
+            <p class="message"><?=$timeline['message']?></p>
         </div><?=PHP_EOL?><?php
     }
     $content .= ob_get_clean();
