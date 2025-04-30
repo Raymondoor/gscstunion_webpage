@@ -1,33 +1,37 @@
+const BlockEmbed = Quill.import('blots/block/embed'); // Use block/embed for iframes
 const Block = Quill.import('blots/block');
 
-class YouTubeBlot extends Block {
+class YouTubeBlot extends BlockEmbed {
   static create(value) {
+    // Validate the URL before creating the blot
+    if (!value || !value.url || !value.url.startsWith('https://www.youtube.com/embed/')) {
+      return document.createElement('p'); // Fallback to plain <p> if invalid
+    }
+
     let node = super.create();
-    // Create the iframe
+    node.setAttribute('data-youtube', value.url); // Store URL in a data attribute
     let iframe = document.createElement('iframe');
     iframe.setAttribute('src', value.url);
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
     iframe.setAttribute('allowfullscreen', '');
-    // Wrap it in a <p> tag
     node.appendChild(iframe);
     return node;
   }
 
   static value(node) {
-    const iframe = node.querySelector('iframe');
-    return {
-      url: iframe ? iframe.getAttribute('src') : ''
-    };
+    const url = node.getAttribute('data-youtube');
+    return url ? { url } : {};
   }
 
   static formats(node) {
-    const iframe = node.querySelector('iframe');
-    return iframe ? { url: iframe.getAttribute('src') } : {};
+    const url = node.getAttribute('data-youtube');
+    return url ? { url } : {};
   }
 }
 YouTubeBlot.blotName = 'youtube';
-YouTubeBlot.tagName = 'p';
+YouTubeBlot.tagName = 'div';
+YouTubeBlot.className = 'ql-youtube-embed';
 Quill.register(YouTubeBlot);
 
 class DividerBlot extends Block {
