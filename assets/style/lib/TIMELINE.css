@@ -13,7 +13,7 @@ main{
     }
     #timelineContainer{
         background: #e7ffc734;
-background: linear-gradient(135deg,rgba(252, 255, 220, 0.3) 0%, rgba(224, 236, 255, 0.3) 100%);
+        background: linear-gradient(135deg,rgba(252, 255, 220, 0.3) 0%, rgba(224, 236, 255, 0.3) 100%);
         min-width: 580px;
         width: 95%;
         max-width: 1000px;
@@ -76,6 +76,7 @@ background: linear-gradient(135deg,rgba(252, 255, 220, 0.3) 0%, rgba(224, 236, 2
     background-color: #1c6450;
     color: #ffffff;
     z-index: 0;
+    box-shadow: 3px 3px 0 #47c451;
 }
 #tColour1::after, #tColour3::after, #tColour5::after, #tColour7::after{
     content: "";
@@ -90,6 +91,7 @@ background: linear-gradient(135deg,rgba(252, 255, 220, 0.3) 0%, rgba(224, 236, 2
     margin-left: auto;
     background-color: #a2eaa9;
     color: #25715c;
+    box-shadow: 3px 3px 0 #1c6b24;
 }
 #tColour2::after, #tColour4::after, #tColour6::after, #tColour8::after{
     content: "";
