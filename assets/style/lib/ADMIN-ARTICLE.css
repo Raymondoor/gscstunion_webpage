@@ -2,4 +2,21 @@
     a{
         color: white;
     }
+    h3{
+        margin: 0;
+        padding: 0.5rem;
+    }
+    padding: 0.25rem;
+    margin: 0.125rem;
+    input[type="button"]{
+        padding: 0.5rem;
+        border: 2px solid white;
+        border-radius: 0.25rem;
+        background-color: rgba(128, 128, 128, 0.3);
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type="button"]:hover{
+        background-color: rgba(128, 128, 128, 0.6);
+    }
 }
