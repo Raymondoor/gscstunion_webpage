@@ -12,6 +12,12 @@
 }
 #new{
     margin: 0 0.5rem;
+    #newmessage{
+        width: 80%;
+    }
+    input{
+        padding: 0.25rem;
+    }
 }
 #delete{
     margin: 0 0.5rem;

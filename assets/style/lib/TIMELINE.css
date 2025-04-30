@@ -3,6 +3,8 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 50dvh;
+    padding-bottom: 0.5rem;
     h1{
         text-align: center;
         margin: 0;
@@ -10,44 +12,39 @@ main{
         color: white;
     }
     #timelineContainer{
-        width: 60vw;
+        background: #e7ffc734;
+background: linear-gradient(135deg,rgba(252, 255, 220, 0.3) 0%, rgba(224, 236, 255, 0.3) 100%);
         min-width: 580px;
-        max-width: 1200px;
+        width: 95%;
+        max-width: 1000px;
         margin: 0 auto;
-        padding-bottom: 1rem;
+        padding: 0.5rem 0;
+        border-radius: 2rem;
         .post{
             position: relative;
-            border-radius: 1rem;
-            border: 2px solid #479e88;
-            margin: 1rem;
-            padding: 10px 50px;
+            border-radius: 2rem;
+            padding: 0.5rem 5rem;
             z-index: 1;
             transition: margin 240ms ease-in;
+            width: fit-content;
+            max-width: 60%;
             p{
                 margin: 5px;
                 font-weight: bold;
                 font-size: 1rem;
                 transition: all 240ms ease-in;
             }
+            .author{
+                font-size: 1rem;
+            }
             .date{
-                font-size: 12px;
+                font-size: 0.75rem;
             }
             .message{
                 width: 100%;
+                font-size: 0.875rem;
             }
         }
-        .post:after {
-            position: absolute;/*絶対配置*/
-            content: '';/*空に*/
-            border: 1rem solid;/*三角を作る*/
-            border-top: 2rem solid;
-            border-bottom: none;
-            border-image: linear-gradient(to bottom, var(--MainColour), var(--SubColour2));
-            top: 100%;/*下にフィット*/
-            width: calc(80% - 2rem);
-            left: 10%;/*中央配置*/
-            z-index: -1;
-          }
     }
     @media(max-width: 680px){
         h1{
@@ -55,49 +52,50 @@ main{
         }
         #timelineContainer{
             min-width: 300px;
-            width: 92vw;
+            width: 92%;
+            margin: 0 auto;
             .post{
-                margin: 1rem 5%;
-                padding: 10px 20px;
+                padding: 0.5rem 3rem;
+                border-radius: 2rem;
+                width: fit-content;
+                max-width: 60%;
                 p{
                     font-size: 0.875rem;
+                }
+                .message{
+                    width: 100%;
+                    font-size: 0.75rem;
                 }
             }
         }
     }
 }
-#tColour1{
+#tColour1, #tColour3, #tColour5, #tColour7{
+    margin: 1rem;
+    margin-right: auto;
     background-color: #1c6450;
     color: #ffffff;
+    z-index: 0;
 }
-#tColour2{
-    background-color: #297760;
-    color: #ffffff;
+#tColour1::after, #tColour3::after, #tColour5::after, #tColour7::after{
+    content: "";
+    border: 15px solid transparent;
+    border-top-color: #1c6450;
+    position: absolute;
+    top: 14px;
+    left: -14px;
 }
-#tColour3{
-    background-color: #368b6e;
-    color: #ffffff;
+#tColour2, #tColour4, #tColour6, #tColour8{
+    margin: 1rem;
+    margin-left: auto;
+    background-color: #a2eaa9;
+    color: #25715c;
 }
-#tColour4{
-    background-color: #439e7f;
-    color: #ffffff;
-}
-#tColour5{
-    background-color: #4eb28e;
-    color: hsl(0, 0%, 98%);
-}
-#tColour6{
-    background-color: #72c5a9;
-    color: #1c6450;
-}
-#tColour7{
-    background-color: #94dac2;
-    color: #297760;
-}
-#tColour8{
-    background-color: #b6ecdc;
-    color: #368b6e;
-}
-#tColour8:after{
-border: none !important;
+#tColour2::after, #tColour4::after, #tColour6::after, #tColour8::after{
+    content: "";
+    border: 15px solid transparent;
+    border-top-color: #a2eaa9;
+    position: absolute;
+    top: 14px;
+    right: -14px;
 }
