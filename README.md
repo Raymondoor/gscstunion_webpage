@@ -1,5 +1,5 @@
 ## GSC学生連合HP
-#### リンク：[www.cc.aoyama.ac.jp/~gscstunion/](www.cc.aoyama.ac.jp/~gscstunion/)
+#### リンク：[https://www.cc.aoyama.ac.jp/~gscstunion/](www.cc.aoyama.ac.jp/~gscstunion/)
 私たちについての詳細は是非HPやSNSよりご確認ください！
 
 ### Code↓
