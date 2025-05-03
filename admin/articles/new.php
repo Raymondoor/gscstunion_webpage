@@ -51,8 +51,12 @@ foreach($hopt as $option){ ?>
         <label for="editor">本文</label>
         <div id="editor"></div>
         <input type="hidden" id="editorInput" name="main"><br>
+        <button type="button" id="showPrevBtn">プレビュー</button>
         <input type="submit" value="投稿" id="sumitbtn">
     </form>
+    <div id="prvdiv" style="border: 1px solid black;">
+        
+    </div>
 </main>
 <?php
 include_once(TEMPLATE_DIR.'/footer.php');

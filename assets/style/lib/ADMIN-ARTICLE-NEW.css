@@ -14,6 +14,7 @@
 }
 #title{
     min-width: 280px;
+    width: clamp(280px, 75%, 1200px);
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -68,11 +69,25 @@ select {
   .ql-youtube img {
     vertical-align: middle;
   }
-#sumitbtn{
+#sumitbtn, #showPrevBtn{
     margin: 0 0rem 1rem 0rem;
-    padding: 0.25rem;
+    padding: 0.5rem;
     background-color: var(--MainColour);
     color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: var(--BaseFont);
+    font-size: 1rem;
+}
+#sumitbtn:hover, #showPrevBtn:hover{
+    background-color: var(--SubColour2);
+}
+#prvdiv{
+    display: none;
+    /* z-index: 1;
+    position: absolute;
+    top: 0; */
+    width: 100%;
 }
 ::file-selector-button, ::-webkit-file-upload-button{
     font-family: var(--BaseFont);
@@ -89,7 +104,6 @@ select {
     height: 5rem;
 }
 .ql-toolbar{
-    max-width: clamp(280px, 80%, 1200px);
     position: -webkit-sticky;
     position: sticky;
     top: calc(2.5rem + (0.25rem * 2) + 2.5px);
@@ -97,7 +111,6 @@ select {
     z-index: 1;
 }
 .ql-container{
-    max-width: clamp(280px, 80%, 1200px);
     h2{
         margin: 0.5rem 0 !important;
     }
