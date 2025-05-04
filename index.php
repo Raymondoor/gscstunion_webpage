@@ -40,7 +40,7 @@ include_once(TEMPLATE_DIR.'/header.php');
     </div>
     <hr>
     <div id="galleryContainer">
-        <h2>ギャラリー</h2>
+        <!-- <h2>ギャラリー</h2> -->
         <div id="gallery">
         <!-- 写真スライドショー<br>Coming Soon... -->
             <!-- <div class="phgl" phgl-image="./path"></div> -->
