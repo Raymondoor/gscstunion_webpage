@@ -138,3 +138,4 @@ function checkFileSize(input) {
     input.value = ""; // Clear the input
   }
 }
+window.checkFileSize = checkFileSize;

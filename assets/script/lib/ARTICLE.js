@@ -13,3 +13,4 @@ function copyToClipboard(button) {
 document.addEventListener('DOMContentLoaded', () => {
     new ImageExpander();
 });
+window.copyToClipboard = copyToClipboard;

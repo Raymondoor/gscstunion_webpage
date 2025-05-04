@@ -7,6 +7,15 @@ form{
 #thumb{
     margin: 0.25rem;
 }
+input{
+    font-size: 1rem;
+    font-family: var(--BaseFont);
+}
+#pDescription{
+    min-width: 280px;
+    width: 75%;
+    max-width: 800px;
+}
 ::file-selector-button, ::-webkit-file-upload-button{
     font-family: var(--BaseFont);
     background-color: rgb(209, 213, 219);
