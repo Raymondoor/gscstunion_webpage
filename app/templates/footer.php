@@ -41,7 +41,7 @@
 <?php if($file == 'ADMIN-ARTICLE-NEW'){?>
     <script src="<?=SCRIPT_URL?>/quill.js"></script>
 <?php }?>
-    <script src="<?=SCRIPT_URL.'/lib/'.$file.'.js'?>"></script>
+    <script src="<?=SCRIPT_URL.'/lib/'.$file.'.js'?>" type="module"></script>
     <?php if(file_exists(SCRIPT_DIR.'/'.$file.'.php')){
         require_once(SCRIPT_DIR.'/'.$file.'.php');
     }

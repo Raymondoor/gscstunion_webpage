@@ -39,8 +39,13 @@ include_once(TEMPLATE_DIR.'/header.php');
         </div>
     </div>
     <hr>
-    <div id="gallery">
-        写真スライドショー<br>Coming Soon...
+    <div id="galleryContainer">
+        <h2>ギャラリー</h2>
+        <div id="gallery">
+        <!-- 写真スライドショー<br>Coming Soon... -->
+            <!-- <div class="phgl" phgl-image="./path"></div> -->
+        </div>
+        <script src="<?=SCRIPT_URL?>/phgl.js"></script>
     </div>
     <hr>
     <div id="sns">

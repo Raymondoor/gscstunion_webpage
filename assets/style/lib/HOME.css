@@ -269,11 +269,43 @@ main{
             }
         }
     }
-    #gallery{
-        display: none;
-        height: 50vh;
+    #galleryContainer{
+        background-color: var(--BackTone);
         text-align: center;
-        align-content: center;
+        display: none;
+        h2{
+            margin: 0;
+            padding: 0.25rem;
+        }
+    }
+    #gallery{
+        /* display: none; */
+        height: 24vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .phgl{
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: right 35% bottom 45%;
+            background-size: cover;
+            cursor: pointer;
+            transition: all 360ms;
+        }
+        .phgl:hover{
+            background-position: center;
+        }
+    }
+    @media(max-width: 920px){
+        #gallery{
+            height: 20vh;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    @media(max-width: 680px){
+        #gallery{
+            height: 18vh;
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
     #sns{
         margin: 0;

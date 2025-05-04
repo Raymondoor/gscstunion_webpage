@@ -1,3 +1,4 @@
+import { ImageExpander } from '../ImageExpander.js';
 function copyToClipboard(button) {
     var url = location.href;
     navigator.clipboard.writeText(url)
@@ -9,3 +10,6 @@ function copyToClipboard(button) {
             console.error('Could not copy text: ', err);
         });
 }
+document.addEventListener('DOMContentLoaded', () => {
+    new ImageExpander();
+});

@@ -120,6 +120,7 @@ pre{
 img{
   max-height: 20rem;
   max-width: 20rem;
+  cursor: pointer;
 }
 @media(max-width: 680px){
   #articleContainer{
