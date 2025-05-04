@@ -21,7 +21,7 @@ export class ImageExpander {
         overlay.style.top = '0';
         overlay.style.left = '0';
         overlay.style.width = '100vw';
-        overlay.style.height = '100vh';
+        overlay.style.height = '100dvh';
         overlay.style.background = 'rgba(0,0,0,0.8)';
         overlay.style.display = 'flex';
         overlay.style.justifyContent = 'center';
