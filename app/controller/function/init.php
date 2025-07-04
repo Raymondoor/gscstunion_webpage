@@ -1,0 +1,11 @@
+<?php
+session_start();
+require_once(__DIR__.'/page.php');
+require_once(__DIR__.'/header.php');
+require_once(__DIR__.'/dynassetloader.php');
+require_once(__DIR__.'/cookie.php');
+require_once(__DIR__.'/formgenerate.php');
+require_once(__DIR__.'/log.php');
+require_once(__DIR__.'/jpyear.php');
+require_once(__DIR__.'/color.php');
+require_once(__DIR__.'/string.php');

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Zen Maru";
+    src: url("ZenMaruGothic-Regular.woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Zen Kaku";
+    src: url("ZenKakuGothicAntique-Regular.woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Zen Min";
+    src: url("ZenOldMincho-Regular.woff2");
+    font-display: swap;
+}

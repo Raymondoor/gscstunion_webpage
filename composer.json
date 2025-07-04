@@ -1,0 +1,43 @@
+{
+    "name":"raymondoor/webaapp2",
+    "description":"A modular php-httpd application with conventional httpd style routing",
+    "type":"project",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Raymondoor",
+            "email":"torhc17311@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Raymondoor\\Config\\":"app/config/",
+            "Raymondoor\\Model\\":"app/model/",
+            "Raymondoor\\Controller\\":"app/controller/",
+            "Raymondoor\\Function\\":"app/controller/function/"
+        },
+        "files":[
+            "app/config/env.php",
+            "app/controller/function/init.php",
+            "app/controller/App.php"
+        ]
+    },
+    "require":{
+        "google/apiclient":"2.16.1",
+        "symfony/var-dumper":"5.4.48",
+        "ezyang/htmlpurifier":"^4.18"
+    },
+    "scripts":{
+        "pre-autoload-dump":"Google\\Task\\Composer::cleanup"
+    },
+    "extra":{
+        "google/apiclient-services":[
+            "Oauth2"
+        ]
+    },
+    "config":{
+        "platform":{
+            "php":"7.4"
+        }
+    }
+}
